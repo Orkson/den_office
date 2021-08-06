@@ -1,0 +1,25 @@
+﻿@model IEnumerable<den_office.Tests.Game>
+
+<body>
+    <h1>Hi</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+            </tr>
+        </tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+
