@@ -12,7 +12,7 @@ namespace den_office.Employees
         {
             _reservationes = new List<Reservationes>()
             {
-                new Reservationes(){Id = 1, Service = "Jakas usluga1", Status = "zatwierdzna"},
+                new Reservationes(){Id = 1, Service = "Jakas usluga123", Status = "zatwierdzna"},
             };
         }
 

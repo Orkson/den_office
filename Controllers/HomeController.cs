@@ -1,4 +1,5 @@
 ﻿using den_office.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -18,16 +19,38 @@ namespace den_office.Controllers
             _logger = logger;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [AllowAnonymous]
+        public IActionResult Offer()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Price()
+        {
+            return View();
+        }
+
+
+        [AllowAnonymous]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [AllowAnonymous]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
