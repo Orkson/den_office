@@ -5,10 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using den_office.ViewModels;
 using den_office.Data;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace den_office.Controllers
 {
+    [Authorize]
     public class CustomersController : Controller
     {
         private readonly ApplicationDbContext _context;

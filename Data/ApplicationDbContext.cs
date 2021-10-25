@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using den_office.Models;
+using den_office.Tests;
 
 
 namespace den_office.Data
@@ -18,6 +19,11 @@ namespace den_office.Data
   
 
         public DbSet<Reservation> Reservation { get; set; }
+        public DbSet<Service> Services { get; set; }
+
+
+
+        public DbSet<den_office.Tests.Game> Game { get; set; }
     }
     
 }

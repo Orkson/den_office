@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Http;
 using den_office.Tests;
 using den_office.Employees;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 namespace den_office
 {
@@ -43,8 +45,17 @@ namespace den_office
 
 
             services.AddSingleton<IReservationes, ReservationesData>();
-
+            services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+            services.AddControllers(config =>
+            {
+                // using Microsoft.AspNetCore.Mvc.Authorization;
+                // using Microsoft.AspNetCore.Authorization;
+                var policy = new AuthorizationPolicyBuilder()
+                                 .RequireAuthenticatedUser()
+                                 .Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +74,6 @@ namespace den_office
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthentication();

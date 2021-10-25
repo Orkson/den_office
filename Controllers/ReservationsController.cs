@@ -149,5 +149,10 @@ namespace den_office.Controllers
         {
             return _context.Reservation.Any(e => e.Id == id);
         }
+
+            public async Task<IActionResult> Service()
+        {
+            return View(await _context.Services.ToListAsync());
+        }
     }
 }
