@@ -17,6 +17,7 @@ using den_office.Tests;
 using den_office.Employees;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Authorization;
+using den_office.Models;
 
 namespace den_office
 {
@@ -35,18 +36,53 @@ namespace den_office
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-              .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
-            
-            //services.AddDbContext<ReservationContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("ReservationContext")));
 
 
-            services.AddSingleton<IReservationes, ReservationesData>();
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings.
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = false;
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.LoginPath = "/Identity/Account/Login";
+                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+                options.SlidingExpiration = true;
+            });
+        
+        //services.AddDbContext<ReservationContext>(options =>
+        //options.UseSqlServer(Configuration.GetConnectionString("ReservationContext")));
+
+
+        services.AddSingleton<IReservationes, ReservationesData>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+
             services.AddControllers(config =>
             {
                 // using Microsoft.AspNetCore.Mvc.Authorization;
