@@ -1,7 +1,7 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
+﻿@using den_office.Models;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 
 <!DOCTYPE html>
@@ -29,58 +29,58 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             @*<partial name="_LoginPartial" />*@
-        <div class="navbar-nav flex-grow-1 text-nowrap">
+            <div class="navbar-nav flex-grow-1 text-nowrap">
 
-
-
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">KLINIKA</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Contact">KONTAKT</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
-            </div>
-
-            @if (SignInManager.IsSignedIn(User))
-            {
 
 
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
+                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">KLINIKA</a>
                 </div>
-                <div class="nav-item text-nowrap">
-                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                        <button type="submit" class="nav-link btn btn-link px-3">Wyloguj się</button>
-                    </form>
-
-                </div>
-            }
-            else
-            {
-
-
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
                 </div>
-                <div class="nav-item ">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                <div class="nav-item">
+                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Contact">KONTAKT</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
                 </div>
 
-            }
+                @if (SignInManager.IsSignedIn(User))
+                {
 
 
-        </div>
+                    <div class="nav-item">
+                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
+                    </div>
+                    <div class="nav-item text-nowrap">
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="nav-link btn btn-link px-3">Wyloguj się</button>
+                        </form>
+
+                    </div>
+                }
+                else
+                {
+
+
+                    <div class="nav-item">
+                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </div>
+                    <div class="nav-item ">
+                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    </div>
+
+                }
+
+
+            </div>
         </div>
 
     </header>
