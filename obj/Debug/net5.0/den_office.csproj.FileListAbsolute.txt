@@ -511,3 +511,10 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Owin.dll

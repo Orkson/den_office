@@ -44,7 +44,7 @@ namespace den_office.Controllers
             return View();
         }
 
-        [AllowAnonymous]
+        [Authorize(Roles = "Admin")]
         public IActionResult Contact()
         {
             return View();
