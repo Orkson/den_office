@@ -4,7 +4,9 @@
 [assembly: global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute(typeof(AspNetCore.Areas_Identity_Pages_Account_Manage__ManageNav), @"mvc.1.0.view", @"/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml")]
 namespace AspNetCore
 {
-    #line hidden
+
+    using den_office.Models;
+#line hidden
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -12,10 +14,9 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-    using den_office.Models;
 #nullable restore
 #line 1 "D:\Projects\C#\den_office\den_office\Areas\Identity\Pages\_ViewImports.cshtml"
-    using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 
 #line default
 #line hidden

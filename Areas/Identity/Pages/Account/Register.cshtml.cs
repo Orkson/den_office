@@ -47,28 +47,28 @@ namespace den_office.Areas.Identity.Pages.Account
         public class InputModel
         {
 
-            [Required]
+            [Required(ErrorMessage = "Imię jest wymagane")]
             [Display(Name = "Imię")]
             public string FirstName { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Nazwisko jest wymagane")]
             [Display(Name = "Nazwisko")]
             public string Surname { get; set; }
 
-            [Required]
-            [EmailAddress]
-            [Display(Name = "Email")]
+            [Required(ErrorMessage = "E-mail jest wymagany")]
+            [EmailAddress(ErrorMessage = "E-mail jest błędny")]
+            [Display(Name = "E-mail")]
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "{0} musi zawierac minimum {2} znaków.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Hasło")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Potwierdź hasło")]
+            [Compare("Password", ErrorMessage = "Hasła nie pasują.")]
             public string ConfirmPassword { get; set; }
         }
 
