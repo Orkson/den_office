@@ -7,7 +7,9 @@ namespace den_office.ViewModels
 {
     public class CustomersViewModel
     {
-        public string UserName;
+        public string FirstName;
+        public string Surname;
+        public string PhoneNumber;
         public string Email;
     }
 }

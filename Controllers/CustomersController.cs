@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace den_office.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class CustomersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,7 +26,9 @@ namespace den_office.Controllers
             var customers = (from user in _context.Users
                                   select new CustomersViewModel()
                                   {
-                                      UserName = user.UserName,
+                                      FirstName = user.FirstName,
+                                      Surname = user.Surname,
+                                      PhoneNumber = user.PhoneNumber,
                                       Email = user.Email,
                                   }).ToList();
             return View(customers);

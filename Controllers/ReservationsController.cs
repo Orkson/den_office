@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using den_office.Data;
 using den_office.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace den_office.Controllers
 {
@@ -19,7 +20,7 @@ namespace den_office.Controllers
             _context = context;
         }
 
-        // GET: Reservations
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Reservation.ToListAsync());
