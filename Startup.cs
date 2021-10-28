@@ -39,7 +39,8 @@ namespace den_office
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()            
+                    .AddRazorRuntimeCompilation();
 
             services.AddAuthorization(options =>
             {

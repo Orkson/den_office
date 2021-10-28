@@ -501,7 +501,6 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
@@ -518,3 +517,4 @@ D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.dl
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Owin.dll
+D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\libman.json
