@@ -34,7 +34,7 @@ namespace den_office.Controllers
             }
 
             var service = await _context.Services
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ServiceId == id);
             if (service == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ServiceName,ServiceDuration")] Service service)
+        public async Task<IActionResult> Create([Bind("ServiceId,ServiceName,ServiceDuration")] Service service)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ServiceName,ServiceDuration")] Service service)
+        public async Task<IActionResult> Edit(int id, [Bind("ServiceId,ServiceName,ServiceDuration")] Service service)
         {
-            if (id != service.Id)
+            if (id != service.ServiceId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace den_office.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ServiceExists(service.Id))
+                    if (!ServiceExists(service.ServiceId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace den_office.Controllers
             }
 
             var service = await _context.Services
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ServiceId == id);
             if (service == null)
             {
                 return NotFound();
@@ -147,7 +147,7 @@ namespace den_office.Controllers
 
         private bool ServiceExists(int id)
         {
-            return _context.Services.Any(e => e.Id == id);
+            return _context.Services.Any(e => e.ServiceId == id);
         }
     }
 }

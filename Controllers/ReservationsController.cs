@@ -23,7 +23,7 @@ namespace den_office.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Reservation.ToListAsync());
+            return View(await _context.Reservation.Include(e=>e.Service).ToListAsync());
         }
 
         // GET: Reservations/Details/5
@@ -35,7 +35,7 @@ namespace den_office.Controllers
             }
 
             var reservation = await _context.Reservation
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
                 return NotFound();
@@ -55,7 +55,7 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Service,Status,ServiceDate,ReservationDate")] Reservation reservation)
+        public async Task<IActionResult> Create([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
         {
             if (ModelState.IsValid)
             {
@@ -87,9 +87,9 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Service,Status,ServiceDate,ReservationDate")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate")] Reservation reservation)
         {
-            if (id != reservation.Id)
+            if (id != reservation.ReservationId)
             {
                 return NotFound();
             }
@@ -103,7 +103,7 @@ namespace den_office.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ReservationExists(reservation.Id))
+                    if (!ReservationExists(reservation.ReservationId))
                     {
                         return NotFound();
                     }
@@ -126,7 +126,7 @@ namespace den_office.Controllers
             }
 
             var reservation = await _context.Reservation
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
                 return NotFound();
@@ -148,7 +148,7 @@ namespace den_office.Controllers
 
         private bool ReservationExists(int id)
         {
-            return _context.Reservation.Any(e => e.Id == id);
+            return _context.Reservation.Any(e => e.ReservationId == id);
         }
 
             public async Task<IActionResult> Service()
