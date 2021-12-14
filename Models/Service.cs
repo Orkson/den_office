@@ -10,10 +10,14 @@ namespace den_office.Models
     public class Service
     {
         public int ServiceId { get; set; }
+
+        [Display(Name = "Usługa")]
         public string ServiceName { get; set; }
+
+        [Display(Name = "Czas usługi")]
 
         public int ServiceDuration { get; set; }
 
-        public Reservation Reservation { get; set; }
+        public ICollection<Reservation> Reservations { get; set; }
     }
 }

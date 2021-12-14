@@ -49,14 +49,35 @@ namespace den_office.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Staff()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Gallery()
+        {
+            return View();
+        }
 
 
         [AllowAnonymous]
         public async Task<IActionResult> Privacy()
         {
             var user = await _userManager.GetUserAsync(User);
-            var email = user.Email;
+            var email = user.FirstName;
+            var variable = user.FirstName;
             ViewData["User"] = user;
+
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
 
             return View();
         }

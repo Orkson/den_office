@@ -10,9 +10,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabinet stomatologiczny</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/fontawesome.css" />
 
@@ -20,17 +20,12 @@
 
 
 
-
-
-
-
-
-
 </head>
 <body>
     <header class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg flex-md-nowrap shadow">
 
-        <div class="container">-->
+        <div class="container">
+            -->
 
             @*<partial name="_LoginPartial" />*@
             <div class="navbar-nav flex-grow-1 text-nowrap">
@@ -47,10 +42,11 @@
 
                         <a class="nav-link px-3 dropdown-toggle" href="#" id="1" data-bs-toggle="dropdown" aria-expanded="false">KLINIKA</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Privacy">O klinice</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Privacy">Personel</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Privacy">Galeria</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Price">Certyfikaty</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">O klinice</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Staff">Personel</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Gallery">Galeria</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a></li>
                         </ul>
                     </li>
 
@@ -63,16 +59,16 @@
                 <div class="nav-item">
                     <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Contact">KONTAKT</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
-                </div>
+                @if (User.IsInRole("Admin"))
+                {
 
+                    <div class="nav-item">
+                        <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
+                    </div>
+                }
                 @if (SignInManager.IsSignedIn(User))
                 {
 
@@ -95,15 +91,15 @@
                         <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Register">Zarejestruj się</a>
                     </div>
                     <div class="nav-item ">
-                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Zaloguj się</a>
                     </div>
 
                 }
             </div>
         </div>
     </header>
-    
-   
+
+
 
 
 

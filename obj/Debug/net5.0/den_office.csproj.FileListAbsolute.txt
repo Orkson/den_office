@@ -518,3 +518,9 @@ D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.Co
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Owin.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\libman.json
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\UserInfo.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Gallery.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsCalendar.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebar.cshtml.g.cs

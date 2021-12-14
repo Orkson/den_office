@@ -8,23 +8,49 @@ using Microsoft.EntityFrameworkCore;
 using den_office.Data;
 using den_office.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using den_office.ViewModels;
 
 namespace den_office.Controllers
 {
     public class ReservationsController : Controller
     {
+        
+        private readonly ILogger<ReservationsController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ApplicationDbContext _context;
 
-        public ReservationsController(ApplicationDbContext context)
+        public ReservationsController(ApplicationDbContext context,
+            ILogger<ReservationsController> logger,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager)
         {
+            System.Security.Claims.ClaimsPrincipal currentUser = this.User;
+
             _context = context;
+            _logger = logger;
+            _userManager = userManager;
+            _signInManager = signInManager;
+
         }
+
 
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Reservation.Include(e=>e.Service).ToListAsync());
         }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ReservationsCalendar()
+        {
+            return View(await _context.Reservation.Include(e => e.Service).ToListAsync());
+        }
+
+
+
 
         // GET: Reservations/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -44,6 +70,24 @@ namespace den_office.Controllers
             return View(reservation);
         }
 
+
+        public async Task<IActionResult> UserInfo()
+        {
+            var service = await _context.Services.ToListAsync();
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+
+            if (User.IsInRole("Admin")) {
+                ViewData["User"] = user;
+                ViewData["Variable"] = variable;
+                ViewData["Email"] = email;
+                ViewData["Service"] = service;
+
+            }
+            return View(await _context.Reservation.ToListAsync());
+        }
+
         // GET: Reservations/Create
         public IActionResult Create()
         {
@@ -57,8 +101,20 @@ namespace den_office.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
         {
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+            ViewData["User"] = user;
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
+
+
             if (ModelState.IsValid)
             {
+                
+
+
+
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
