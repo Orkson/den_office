@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using den_office.ViewModels;
+using System.Data;
 
 namespace den_office.Controllers
 {
@@ -47,6 +48,24 @@ namespace den_office.Controllers
         public async Task<IActionResult> ReservationsCalendar()
         {
             return View(await _context.Reservation.Include(e => e.Service).ToListAsync());
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> CreateRes()
+        {
+            var currentTime = DateTime.Now;
+            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+                                                          && e.ReservationDate.Month >= DateTime.Now.Month
+                                                          && e.ReservationDate.Day >= DateTime.Now.Day)
+                .ToListAsync();
+            
+            
+              
+        
+
+
+
+            return View(listOfDates);
         }
 
 
@@ -107,7 +126,7 @@ namespace den_office.Controllers
             ViewData["User"] = user;
             ViewData["Variable"] = variable;
             ViewData["Email"] = email;
-
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
 
             if (ModelState.IsValid)
             {

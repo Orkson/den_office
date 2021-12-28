@@ -18,6 +18,9 @@
 
     <link rel="stylesheet" href="~/css/navbar.css" />
 
+    <link rel="stylesheet" href="~/lib/jquery-ui-1.13.0.custom/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
 
 </head>
@@ -25,22 +28,21 @@
     <header class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg flex-md-nowrap shadow">
 
         <div class="container">
-            -->
 
             @*<partial name="_LoginPartial" />*@
             <div class="navbar-nav flex-grow-1 text-nowrap">
 
 
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">
-                        <img src="~/images/logo.png" width="30" height="30" class="d-inline-block align-down" alt="">
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logo.png" width="30" height="30" class="" alt="">
                         DentOptimal
                     </a>
                 </div>
                 <ul class="nav-item">
                     <li class="nav-item dropdown">
 
-                        <a class="nav-link px-3 dropdown-toggle" href="#" id="1" data-bs-toggle="dropdown" aria-expanded="false">KLINIKA</a>
+                        <a class="nav-link px-4 pt-3 dropdown-toggle" href="#" id="1" data-bs-toggle="dropdown" aria-expanded="false">KLINIKA</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">O klinice</a></li>
                             <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Staff">Personel</a></li>
@@ -54,19 +56,16 @@
 
                 </ul>
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
                 </div>
                 @if (User.IsInRole("Admin"))
                 {
 
                     <div class="nav-item">
-                        <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
+                        <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Reservations" asp-action="Index">Panel zarządzania</a>
                     </div>
                 }
                 @if (SignInManager.IsSignedIn(User))
@@ -74,11 +73,11 @@
 
 
                     <div class="nav-item">
-                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
                     </div>
                     <div class="nav-item text-nowrap">
-                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                            <button type="submit" class="nav-link btn btn-link px-3">Wyloguj się</button>
+                        <form class="form-inline " asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="nav-link btn btn-link px-4 pt-3">Wyloguj się</button>
                         </form>
 
                     </div>
@@ -88,10 +87,10 @@
 
 
                     <div class="nav-item">
-                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Register">Zarejestruj się</a>
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Register">Zarejestruj się</a>
                     </div>
                     <div class="nav-item ">
-                        <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Zaloguj się</a>
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Login">Zaloguj się</a>
                     </div>
 
                 }
@@ -125,7 +124,6 @@
             &copy; 2021 - Nazwa gabinetu - stopka - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)

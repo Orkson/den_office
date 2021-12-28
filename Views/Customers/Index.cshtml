@@ -4,49 +4,51 @@
     Layout = "_LayoutSidebar";
 
 }
-  
-<h2>Lista klientów</h2>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
+<h2 class="text-center">
+    Lista klientów
+</h2>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col"></th>
 
-                            <th scope="col">Imię</th>
+            <th scope="col">Imię</th>
 
-                            <th scope="col">Nazwisko</th>
+            <th scope="col">Nazwisko</th>
 
-                            <th scope="col">Numer telefonu</th>
+            <th scope="col">Numer telefonu</th>
 
-                            <th scope="col">E-mail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @{var i = 1;                             }
-                        @foreach (var user in Model)
-                         
-                        {
-                        <tr>
-                            <td>
-                                @i
-                            </td>
-                            <td>
-                                @user.FirstName
+            <th scope="col">E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var i = 1; }
+        @foreach (var user in Model)
 
-                            </td>
-                            <td>
-                                @user.Surname
+        {
+            <tr>
+                <td>
+                    @i
+                </td>
+                <td>
+                    @user.FirstName
 
-                            </td>
-                            <td>
-                                @user.PhoneNumber
-                            </td>
-                            <td>
-                                @user.Email
-                            </td>
-                        </tr>
-                            i++;
-                        }
+                </td>
+                <td>
+                    @user.Surname
 
-                    </tbody>
-                </table>
+                </td>
+                <td>
+                    @user.PhoneNumber
+                </td>
+                <td>
+                    @user.Email
+                </td>
+            </tr>
+            i++;
+        }
+
+    </tbody>
+</table>
 

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<den_office.Models.Reservation>
+
+<head>
+    <link rel="stylesheet" href="~/lib/jquery-ui-1.13.0.custom/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+
+
+    <script>
+
+
+
+
+
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+
+
+
+
+
+ </script>
+</head>
+<body>
+    
+    <p>Date: <input type="text" id="datepicker"></p>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            DateTime date1 = DateTime.Now;
+
+        }
+        @for (int i = 0; i < Model.Count(); i++)
+        {
+            <tr>
+                <td>
+                    @Model.ToList()[i].ServiceDate
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

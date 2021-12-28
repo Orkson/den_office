@@ -524,3 +524,4 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Gallery.c
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsCalendar.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebar.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateRes.cshtml.g.cs
