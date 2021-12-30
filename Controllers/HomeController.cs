@@ -1,4 +1,7 @@
-﻿using den_office.Models;
+﻿using den_office.Data;
+using den_office.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,11 +15,20 @@ namespace den_office.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+
+        public HomeController(ILogger<HomeController> logger,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager)
         {
+            System.Security.Claims.ClaimsPrincipal currentUser = this.User;
+
             _logger = logger;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [AllowAnonymous]
@@ -37,14 +49,47 @@ namespace den_office.Controllers
             return View();
         }
 
-
         [AllowAnonymous]
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
 
         [AllowAnonymous]
+        public IActionResult Staff()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Privacy()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.FirstName;
+            var variable = user.FirstName;
+            ViewData["User"] = user;
+
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
+
+            return View();
+        }
+
+
+
+
+
+
+
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Contact()
         {
             return View();

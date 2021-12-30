@@ -1,0 +1,58 @@
+﻿@model List<den_office.Models.Reservation>
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<head>
+    <link rel="stylesheet" href="~/lib/jquery-ui-1.13.0.custom/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+</head>
+
+@{
+    DateTime date1 = DateTime.Now;
+    TimeSpan ts2 = new TimeSpan(10, 30, 0);
+    date1 = date1.Date + ts2;
+
+}
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateRes">
+            <a>10:00</a>
+            @foreach (var item in Model)
+            {
+                if (item.ServiceDate.Hour == 10)
+                {
+                    <a>Ten termin jest zajęty</a>
+
+                }
+                else
+                {
+                    <a>Wolny termin</a>
+
+                }
+
+
+
+            }
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<p>Date: <input type="date" id="date" value="@date1"></p>
+
+
+

@@ -1,37 +1,54 @@
 ﻿@model IEnumerable<den_office.ViewModels.CustomersViewModel>
 @{
     ViewBag.Title = "Index";
+    Layout = "_LayoutSidebar";
+
 }
-  
-<a>afegrffg</a>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
+<h2 class="text-center">
+    Lista klientów
+</h2>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col"></th>
 
-                            <th scope="col">Username</th>
+            <th scope="col">Imię</th>
 
-                            <th scope="col">Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var user in Model)
-                        {
-                            <tr>
-                                <td>
-                                    1.
-                                </td>
-                                <td>
-                                    @user.UserName
+            <th scope="col">Nazwisko</th>
 
-                                </td>
-                                <td>
-                                    @user.Email
-                                </td>
-                            </tr>
+            <th scope="col">Numer telefonu</th>
 
-                        }
+            <th scope="col">E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var i = 1; }
+        @foreach (var user in Model)
 
-                    </tbody>
-                </table>
+        {
+            <tr>
+                <td>
+                    @i
+                </td>
+                <td>
+                    @user.FirstName
+
+                </td>
+                <td>
+                    @user.Surname
+
+                </td>
+                <td>
+                    @user.PhoneNumber
+                </td>
+                <td>
+                    @user.Email
+                </td>
+            </tr>
+            i++;
+        }
+
+    </tbody>
+</table>
 

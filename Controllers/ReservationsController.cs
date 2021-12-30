@@ -7,23 +7,87 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using den_office.Data;
 using den_office.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using den_office.ViewModels;
+using System.Data;
 
 namespace den_office.Controllers
 {
     public class ReservationsController : Controller
     {
+        
+        private readonly ILogger<ReservationsController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ApplicationDbContext _context;
 
-        public ReservationsController(ApplicationDbContext context)
+        public ReservationsController(ApplicationDbContext context,
+            ILogger<ReservationsController> logger,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager)
         {
+            System.Security.Claims.ClaimsPrincipal currentUser = this.User;
+
             _context = context;
+            _logger = logger;
+            _userManager = userManager;
+            _signInManager = signInManager;
+
         }
 
-        // GET: Reservations
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Reservation.ToListAsync());
+            return View(await _context.Reservation.Include(e=>e.Service).ToListAsync());
         }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ReservationsCalendar()
+        {
+            return View(await _context.Reservation.Include(e => e.Service).ToListAsync());
+        }
+        
+
+        [HttpGet]
+        public async Task<IActionResult> CreateRes()
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+            var currentTime = DateTime.Now;
+            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+                                                              && e.ReservationDate.Month >= DateTime.Now.Month
+                                                              && e.ReservationDate.Day >= DateTime.Now.Day)
+                .Include(e => e.Service)
+                    .ToListAsync();
+            return View(listOfDates);
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+
+            }
+
+            return View(reservation);
+
+
+        }
+
+
+
 
         // GET: Reservations/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -34,13 +98,31 @@ namespace den_office.Controllers
             }
 
             var reservation = await _context.Reservation
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
                 return NotFound();
             }
 
             return View(reservation);
+        }
+
+
+        public async Task<IActionResult> UserInfo()
+        {
+            var service = await _context.Services.ToListAsync();
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+
+            if (User.IsInRole("Admin")) {
+                ViewData["User"] = user;
+                ViewData["Variable"] = variable;
+                ViewData["Email"] = email;
+                ViewData["Service"] = service;
+
+            }
+            return View(await _context.Reservation.ToListAsync());
         }
 
         // GET: Reservations/Create
@@ -54,8 +136,16 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Service,Status,ServiceDate,ReservationDate")] Reservation reservation)
+        public async Task<IActionResult> Create([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
         {
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+            ViewData["User"] = user;
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+
             if (ModelState.IsValid)
             {
                 _context.Add(reservation);
@@ -64,6 +154,11 @@ namespace den_office.Controllers
             }
             return View(reservation);
         }
+
+
+
+
+
 
         // GET: Reservations/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -86,9 +181,9 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Service,Status,ServiceDate,ReservationDate")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate")] Reservation reservation)
         {
-            if (id != reservation.Id)
+            if (id != reservation.ReservationId)
             {
                 return NotFound();
             }
@@ -102,7 +197,7 @@ namespace den_office.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ReservationExists(reservation.Id))
+                    if (!ReservationExists(reservation.ReservationId))
                     {
                         return NotFound();
                     }
@@ -125,7 +220,7 @@ namespace den_office.Controllers
             }
 
             var reservation = await _context.Reservation
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
                 return NotFound();
@@ -147,12 +242,60 @@ namespace den_office.Controllers
 
         private bool ReservationExists(int id)
         {
-            return _context.Reservation.Any(e => e.Id == id);
+            return _context.Reservation.Any(e => e.ReservationId == id);
         }
 
             public async Task<IActionResult> Service()
         {
             return View(await _context.Services.ToListAsync());
         }
+
+
+        
+
+        // POST: Reservations/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpGet]
+        public async Task<IActionResult> CreateResFinal()
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+            var currentTime = DateTime.Now;
+            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+                                                              && e.ReservationDate.Month >= DateTime.Now.Month
+                                                              && e.ReservationDate.Day >= DateTime.Now.Day)
+                .Include(e => e.Service)
+                    .ToListAsync();
+            return View(listOfDates);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateResFinal([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+            ViewData["User"] = user;
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        
+
+
+
     }
 }
+
+
+

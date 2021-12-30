@@ -1,6 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+
+
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    
+
+    
+        <tr>
+            <td>
+
+                @if (SignInManager.IsSignedIn(User))
+                {
+
+                <a>
+                    Użytkjownik: @ViewData["User"]
+                </a>
+
+                <a>
+                    AdminSurname: @ViewData["Variable"]
+                </a>
+                <a> 
+                   AdminFristName: @ViewData["Email"]
+                </a>
+                    }
+                    else
+                    {
+                    <h4>Użytkownik nie jest zalogowany</h4>
+                    }
+
+</td>
+            </tr>
+      
+    
+@if (SignInManager.IsSignedIn(User))
+{
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}
+
