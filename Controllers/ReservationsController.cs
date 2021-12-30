@@ -49,23 +49,41 @@ namespace den_office.Controllers
         {
             return View(await _context.Reservation.Include(e => e.Service).ToListAsync());
         }
-
-        [AllowAnonymous]
-        public async Task<IActionResult> CreateRes()
-        {
-            var currentTime = DateTime.Now;
-            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
-                                                          && e.ReservationDate.Month >= DateTime.Now.Month
-                                                          && e.ReservationDate.Day >= DateTime.Now.Day)
-                .ToListAsync();
-            
-            
-              
         
 
-
-
+        [HttpGet]
+        public async Task<IActionResult> CreateRes()
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+            var currentTime = DateTime.Now;
+            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+                                                              && e.ReservationDate.Month >= DateTime.Now.Month
+                                                              && e.ReservationDate.Day >= DateTime.Now.Day)
+                .Include(e => e.Service)
+                    .ToListAsync();
             return View(listOfDates);
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+
+            }
+
+            return View(reservation);
+
+
         }
 
 
@@ -130,16 +148,17 @@ namespace den_office.Controllers
 
             if (ModelState.IsValid)
             {
-                
-
-
-
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(reservation);
         }
+
+
+
+
+
 
         // GET: Reservations/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -230,5 +249,53 @@ namespace den_office.Controllers
         {
             return View(await _context.Services.ToListAsync());
         }
+
+
+        
+
+        // POST: Reservations/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpGet]
+        public async Task<IActionResult> CreateResFinal()
+        {
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+            var currentTime = DateTime.Now;
+            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+                                                              && e.ReservationDate.Month >= DateTime.Now.Month
+                                                              && e.ReservationDate.Day >= DateTime.Now.Day)
+                .Include(e => e.Service)
+                    .ToListAsync();
+            return View(listOfDates);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateResFinal([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var variable = user.Surname;
+            ViewData["User"] = user;
+            ViewData["Variable"] = variable;
+            ViewData["Email"] = email;
+            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        
+
+
+
     }
 }
+
+
+

@@ -18,7 +18,7 @@ namespace den_office.Models
         [DataType(DataType.DateTime)]
         public DateTime ReservationDate { get; set; }
 
-        public int ServiceId {get; set;}
+        public int ServiceId { get; set; }
         [Display(Name = "Usługa")]
         public Service Service { get; set; }
 
