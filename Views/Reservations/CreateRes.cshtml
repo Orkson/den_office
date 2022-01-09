@@ -1,4 +1,4 @@
-﻿@model List<den_office.Models.Reservation>
+﻿@model den_office.Models.Reservation
 
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<ApplicationUser> SignInManager
@@ -9,50 +9,161 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
 
+
 </head>
-
-@{
-    DateTime date1 = DateTime.Now;
-    TimeSpan ts2 = new TimeSpan(10, 30, 0);
-    date1 = date1.Date + ts2;
-
-}
+<body>
+    @{
+        IEnumerable<Reservation> ListOfDates = ViewData["ListOfDates"] as IEnumerable<Reservation>;
 
 
+        TimeSpan ts1 = new TimeSpan(10, 00, 0);
+        TimeSpan ts2 = new TimeSpan(10, 30, 0);
+        TimeSpan ts3 = new TimeSpan(11, 00, 0);
+        TimeSpan ts4 = new TimeSpan(11, 30, 0);
+        TimeSpan ts5 = new TimeSpan(12, 00, 0);
 
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="CreateRes">
-            <a>10:00</a>
-            @foreach (var item in Model)
+        DateTime date1 = DateTime.Now.Date + ts1;
+
+        DateTime date2 = DateTime.Now.Date + ts2;
+
+        DateTime date3 = DateTime.Now.Date + ts3;
+
+        DateTime date4 = DateTime.Now.Date + ts4;
+
+        DateTime date5 = DateTime.Now.Date + ts5;
+
+    }
+    
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateRes">
+
+                <h4>Reservation</h4>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-check">
+                    <span asp-validation-for="ServiceDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <a>@date1.ToString("dddd, dd MMMM yyyy")</a><br />
+
+
+                    <label asp-for="ServiceDate">@date1.TimeOfDay</label>
+                    <input asp-for="ServiceDate" type="radio" id="dat1" value="@date1"><br>
+                    <label asp-for="ServiceDate">@date2.TimeOfDay</label>
+                    <input asp-for="ServiceDate" type="radio" id="dat2" value="@date2"><br>
+                    <label asp-for="ServiceDate">@date3.TimeOfDay</label>
+                    <input asp-for="ServiceDate" type="radio" id="dat3" value="@date3"><br>
+                    <label asp-for="ServiceDate">@date4.TimeOfDay</label>
+                    <input asp-for="ServiceDate" type="radio" id="dat4" value="@date4"><br>
+                    <label asp-for="ServiceDate">@date5.TimeOfDay</label>
+                    <input asp-for="ServiceDate" type="radio" id="dat5" value="@date5"><br>
+
+                    <span asp-validation-for="ServiceDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="ReservationDate" class="form-control" value="@DateTime.Now" />
+
+                    <span asp-validation-for="ReservationDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <select asp-for="ServiceId" class="form-select">
+                        <option selected disabled>Wybierz usługę</option>
+                        <option value="1">Przegląd techniczny stanu uzębienia</option>
+                        <option value="2">Montowanie plomby</option>
+                        <option value="3">Eksmisja Zęba</option>
+                    </select>
+                    <span asp-validation-for="ServiceId" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+            @foreach (Reservation item in ListOfDates)
             {
-                if (item.ServiceDate.Hour == 10)
+                <a>@item.ServiceDate.Hour</a>
+                if (@item.ServiceDate.Hour == 10)
                 {
-                    <a>Ten termin jest zajęty</a>
-
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data!!!
+                        <script>
+                            document.getElementById("dat1").disabled = true;
+                        </script>
+                    </a>
                 }
-                else
+
+                if (@item.ServiceDate.Hour == 10 && item.ServiceDate.Minute == 30)
                 {
-                    <a>Wolny termin</a>
-
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data2!!!
+                        <script>
+                            document.getElementById("dat2").disabled = true;
+                        </script>
+                    </a>
                 }
-
-
-
+                if (@item.ServiceDate.Hour == 11)
+                {
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data2!!!
+                        <script>
+                            document.getElementById("dat3").disabled = true;
+                        </script>
+                    </a>
+                }
+                if (@item.ServiceDate.Hour == 11 && item.ServiceDate.Minute == 30)
+                {
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data2!!!
+                        <script>
+                            document.getElementById("dat4").disabled = true;
+                        </script>
+                    </a>
+                }
+                if (@item.ServiceDate.Hour == 12)
+                {
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data2!!!
+                        <script>
+                            document.getElementById("dat5").disabled = true;
+                        </script>
+                    </a>
+                }
+                if (@item.ServiceDate.Hour == 12 && item.ServiceDate.Minute == 30)
+                {
+                    <a>
+                        @item.ServiceDate.Hour tej jest taka data2!!!
+                        <script>
+                            document.getElementById("dat6").disabled = true;
+                        </script>
+                    </a>
+                }
             }
-
-
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+
+
+    <p>Date: <input type="date" id="date" value="@date1"></p>
 
 
 
-<p>Date: <input type="date" id="date" value="@date1"></p>
+</body>
+<script src="~/js/CreateViewJS.js" defer></script>
+<script>
+    function test() {
+        document.getElementById("dat1").disabled = true;
 
+    }
+    function test2() {
 
+        document.getElementById("dat2").disabled = true;
 
+    }
+</script>
+ 

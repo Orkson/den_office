@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using den_office.ViewModels;
 using System.Data;
+using System.Dynamic;
 
 namespace den_office.Controllers
 {
@@ -54,14 +55,28 @@ namespace den_office.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateRes()
         {
+            var currentTime = DateTime.Now; //Czy potrzebne?
+            //ReservationViewModel model = new ReservationViewModel();
+            //var model = new Tuple<List<Reservation>, Reservation> (await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+            //                                                 && e.ReservationDate.Month >= DateTime.Now.Month
+            //                                                 && e.ReservationDate.Day >= DateTime.Now.Day).ToListAsync, _context.Reservation.Include(e => e.Service).ToListAsync());
+
+
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
-            var currentTime = DateTime.Now;
-            var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+            ViewData["ListOfDates"] =  _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
                                                               && e.ReservationDate.Month >= DateTime.Now.Month
-                                                              && e.ReservationDate.Day >= DateTime.Now.Day)
-                .Include(e => e.Service)
-                    .ToListAsync();
-            return View(listOfDates);
+                                                              && e.ReservationDate.Day >= DateTime.Now.Day).ToList();
+
+
+            //model.Reservations = (from u in _context.Reservation
+            //                       join c in _context.Services on u.ReservationId equals c.ServiceId
+            //                       select u).FirstOrDefault();
+            //model.ListOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
+            //                                                  && e.ReservationDate.Month >= DateTime.Now.Month
+            //                                                  && e.ReservationDate.Day >= DateTime.Now.Day)
+            //    .Include(e => e.Service)
+            //        .ToListAsync();
+            return View();
         }
 
 
@@ -71,6 +86,8 @@ namespace den_office.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
         {
+
+
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
 
             if (ModelState.IsValid)
@@ -144,6 +161,7 @@ namespace den_office.Controllers
             ViewData["User"] = user;
             ViewData["Variable"] = variable;
             ViewData["Email"] = email;
+
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
 
             if (ModelState.IsValid)
