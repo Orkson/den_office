@@ -15,26 +15,35 @@
     @{
         IEnumerable<Reservation> ListOfDates = ViewData["ListOfDates"] as IEnumerable<Reservation>;
 
+        TimeSpan ts1 = new TimeSpan(10, 00, 00);
 
-        TimeSpan ts1 = new TimeSpan(10, 00, 0);
-        TimeSpan ts2 = new TimeSpan(10, 30, 0);
+
+        TimeSpan ts2 = new TimeSpan(0, 30, 00);
         TimeSpan ts3 = new TimeSpan(11, 00, 0);
         TimeSpan ts4 = new TimeSpan(11, 30, 0);
         TimeSpan ts5 = new TimeSpan(12, 00, 0);
 
         DateTime date1 = DateTime.Now.Date + ts1;
-
         DateTime date2 = DateTime.Now.Date + ts2;
-
         DateTime date3 = DateTime.Now.Date + ts3;
-
         DateTime date4 = DateTime.Now.Date + ts4;
-
         DateTime date5 = DateTime.Now.Date + ts5;
+        int idInMethod = 0;
+        int idInLoops = 0;
 
+
+        var singleDay = new List<DateTime>();
+        for (int i = 0; i < 14; i++)
+        {
+            singleDay.Add(DateTime.Now.Date + ts1);
+            ts1 += TimeSpan.FromMinutes(30);
+        }
     }
-    
 
+    @foreach(var item in singleDay)
+    {
+        <a>@item.TimeOfDay</a>
+    }
     <div class="row">
         <div class="col-md-4">
             <form asp-action="CreateRes">
@@ -48,17 +57,14 @@
                 <div class="form-group">
                     <a>@date1.ToString("dddd, dd MMMM yyyy")</a><br />
 
+                    @foreach (var item in singleDay)
+                    {
 
-                    <label asp-for="ServiceDate">@date1.TimeOfDay</label>
-                    <input asp-for="ServiceDate" type="radio" id="dat1" value="@date1"><br>
-                    <label asp-for="ServiceDate">@date2.TimeOfDay</label>
-                    <input asp-for="ServiceDate" type="radio" id="dat2" value="@date2"><br>
-                    <label asp-for="ServiceDate">@date3.TimeOfDay</label>
-                    <input asp-for="ServiceDate" type="radio" id="dat3" value="@date3"><br>
-                    <label asp-for="ServiceDate">@date4.TimeOfDay</label>
-                    <input asp-for="ServiceDate" type="radio" id="dat4" value="@date4"><br>
-                    <label asp-for="ServiceDate">@date5.TimeOfDay</label>
-                    <input asp-for="ServiceDate" type="radio" id="dat5" value="@date5"><br>
+                        <label asp-for="ServiceDate">@item.TimeOfDay</label>
+                        <input asp-for="ServiceDate" type="radio" id="@idInMethod" value="@item"><br>
+                        idInMethod++;
+                    }
+
 
                     <span asp-validation-for="ServiceDate" class="text-danger"></span>
                 </div>
@@ -86,65 +92,26 @@
                     <input type="submit" value="Create" class="btn btn-primary" />
                 </div>
             </form>
-            @foreach (Reservation item in ListOfDates)
+            @foreach (var day in singleDay)
             {
-                <a>@item.ServiceDate.Hour</a>
-                if (@item.ServiceDate.Hour == 10)
+                @foreach (Reservation item in ListOfDates)
                 {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data!!!
-                        <script>
-                            document.getElementById("dat1").disabled = true;
-                        </script>
-                    </a>
-                }
+                    <a>@item.ServiceDate.Hour</a>
+                    if (@item.ServiceDate.Hour == day.Hour && item.ServiceDate.Minute == day.Minute)
+                    {
+                        <a>
+                            @item.ServiceDate.Hour tej jest taka data!!!
+                            <script>
+                                document.getElementById("@idInLoops").disabled = true;
+                            </script>
+                        </a>
+                    }
 
-                if (@item.ServiceDate.Hour == 10 && item.ServiceDate.Minute == 30)
-                {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data2!!!
-                        <script>
-                            document.getElementById("dat2").disabled = true;
-                        </script>
-                    </a>
                 }
-                if (@item.ServiceDate.Hour == 11)
-                {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data2!!!
-                        <script>
-                            document.getElementById("dat3").disabled = true;
-                        </script>
-                    </a>
-                }
-                if (@item.ServiceDate.Hour == 11 && item.ServiceDate.Minute == 30)
-                {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data2!!!
-                        <script>
-                            document.getElementById("dat4").disabled = true;
-                        </script>
-                    </a>
-                }
-                if (@item.ServiceDate.Hour == 12)
-                {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data2!!!
-                        <script>
-                            document.getElementById("dat5").disabled = true;
-                        </script>
-                    </a>
-                }
-                if (@item.ServiceDate.Hour == 12 && item.ServiceDate.Minute == 30)
-                {
-                    <a>
-                        @item.ServiceDate.Hour tej jest taka data2!!!
-                        <script>
-                            document.getElementById("dat6").disabled = true;
-                        </script>
-                    </a>
-                }
+                idInLoops++;
+
             }
+            
         </div>
     </div>
 

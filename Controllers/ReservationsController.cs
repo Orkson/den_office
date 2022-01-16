@@ -199,7 +199,7 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
         {
             if (id != reservation.ReservationId)
             {
