@@ -43,11 +43,11 @@ namespace den_office.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Email jest wymagany")]
+            [EmailAddress(ErrorMessage = "Niepoprawny adres email")]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Hasło jest wymagane")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 

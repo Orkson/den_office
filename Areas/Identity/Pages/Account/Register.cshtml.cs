@@ -60,6 +60,12 @@ namespace den_office.Areas.Identity.Pages.Account
             [Display(Name = "E-mail")]
             public string Email { get; set; }
 
+            [Required(ErrorMessage = "Numer telefonu jest wymagany")]
+            [Display(Name = "Numer telefonu")]
+            [RegularExpression(@"^(\d{9})$", ErrorMessage = "Nieprawidłowy numer telefonu")]
+            [DataType(DataType.PhoneNumber)]
+            public string PhoneNumber { get; set; }
+
             [Required]
             [StringLength(100, ErrorMessage = "{0} musi zawierac minimum {2} znaków.", MinimumLength = 6)]
             [DataType(DataType.Password)]
@@ -84,7 +90,7 @@ namespace den_office.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, Surname = Input.Surname };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, Surname = Input.Surname, PhoneNumber =Input.PhoneNumber };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

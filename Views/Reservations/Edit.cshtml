@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edycja rezerwacji</h2>
-
+<h2 class="text-center">Edycja rezerwacji Id @Html.DisplayFor(model => model.ReservationId)</h2>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
     </div>
@@ -14,12 +14,14 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ReservationId" />
-
-
             <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
+                <label asp-for="ServiceDate" class="control-label"></label>
+                <input asp-for="ServiceDate" class="form-control" />
+                <span asp-validation-for="ServiceDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservationDate" class="control-label"></label>
+                <input asp-for="ReservationDate" class="form-control" disabled="disabled" />
             </div>
             <div class="form-group">
                 <label asp-for="Service" class="control-label"></label>
@@ -31,19 +33,29 @@
                 </select>
                 <span asp-validation-for="ServiceId" class="text-danger"></span>
             </div>
-
-
-
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <input asp-for="Status" class="form-control" />
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
+
+
             <div class="form-group">
-                <label asp-for="ServiceDate" class="control-label"></label>
-                <input asp-for="ServiceDate" class="form-control" />
-                <span asp-validation-for="ServiceDate" class="text-danger"></span>
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" disabled="disabled" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="CustomerSurname" class="control-label"></label>
+                <input asp-for="CustomerSurname" class="form-control" disabled="disabled" />
+                <span asp-validation-for="CustomerSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerEmail" class="control-label"></label>
+                <input asp-for="CustomerEmail" class="form-control" disabled="disabled" />
+                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

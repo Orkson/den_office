@@ -20,6 +20,8 @@ namespace den_office.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
+        
+
         public HomeController(ILogger<HomeController> logger,
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager)
@@ -29,6 +31,10 @@ namespace den_office.Controllers
             _logger = logger;
             _userManager = userManager;
             _signInManager = signInManager;
+
+
+
+
         }
 
         [AllowAnonymous]
@@ -44,8 +50,11 @@ namespace den_office.Controllers
         }
 
         [AllowAnonymous]
-        public IActionResult Price()
+        public async Task<IActionResult> Price()
         {
+            var user = await _userManager.GetUserAsync(User);
+            var user2 = user.FirstName;
+            ViewData["Usinger"] = user2;
             return View();
         }
 

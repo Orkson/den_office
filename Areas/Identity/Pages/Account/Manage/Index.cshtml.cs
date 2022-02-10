@@ -34,20 +34,27 @@ namespace den_office.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = "Numer telefonu")]
             public string PhoneNumber { get; set; }
+            [Display(Name = "Imię")]
+            public string FirstName { get; set; }
+            [Display(Name = "Nazwisko")]
+            public string Surname { get; set; }
+
         }
 
         private async Task LoadAsync(ApplicationUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            var firstName = user.FirstName;
+            var surname = user.Surname;
 
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber, FirstName = firstName, Surname = surname 
             };
         }
 
@@ -77,6 +84,7 @@ namespace den_office.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
+            
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
             if (Input.PhoneNumber != phoneNumber)
             {

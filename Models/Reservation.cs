@@ -18,11 +18,20 @@ namespace den_office.Models
         [DataType(DataType.DateTime)]
         public DateTime ReservationDate { get; set; }
 
+        [Display(Name = "Imię")]
+        public string CustomerName { get; set; }
+
+        [Display(Name = "Nazwisko")]
+        public string CustomerSurname { get; set; }
+
+        [Display(Name = "Email")]
+        [DataType(DataType.EmailAddress)]
+        public string CustomerEmail { get; set; }
+
+
         public int ServiceId { get; set; }
         [Display(Name = "Usługa")]
         public Service Service { get; set; }
-
-
 
 
     }

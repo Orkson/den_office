@@ -30,6 +30,7 @@ namespace den_office.Controllers
             SignInManager<ApplicationUser> signInManager)
         {
             System.Security.Claims.ClaimsPrincipal currentUser = this.User;
+            ViewData["currentUse"] = currentUser;
 
             _context = context;
             _logger = logger;
@@ -61,12 +62,17 @@ namespace den_office.Controllers
             //                                                 && e.ReservationDate.Month >= DateTime.Now.Month
             //                                                 && e.ReservationDate.Day >= DateTime.Now.Day).ToListAsync, _context.Reservation.Include(e => e.Service).ToListAsync());
 
-
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
             ViewData["ListOfDates"] =  _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
                                                               && e.ReservationDate.Month >= DateTime.Now.Month
                                                               && e.ReservationDate.Day >= DateTime.Now.Day).ToList();
-
+            var user = await _userManager.GetUserAsync(User);
+            var email = user.Email;
+            var surname = user.Surname;
+            var firstname = user.FirstName;
+            ViewData["email"] = email;
+            ViewData["surname"] = surname;
+            ViewData["firstname"] = firstname;
 
             //model.Reservations = (from u in _context.Reservation
             //                       join c in _context.Services on u.ReservationId equals c.ServiceId
@@ -84,14 +90,17 @@ namespace den_office.Controllers
         [AllowAnonymous]
 
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
         {
 
+            var user = await _userManager.GetUserAsync(User);
+           
 
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
 
             if (ModelState.IsValid)
             {
+                
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -114,7 +123,7 @@ namespace den_office.Controllers
                 return NotFound();
             }
 
-            var reservation = await _context.Reservation
+            var reservation = await _context.Reservation.Include(e => e.Service)
                 .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {

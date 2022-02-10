@@ -46,7 +46,7 @@ namespace den_office.Areas.Identity.Pages.Account.Manage
         {
             [Required]
             [EmailAddress]
-            [Display(Name = "New email")]
+            [Display(Name = "Nowy adres email")]
             public string NewEmail { get; set; }
         }
 
