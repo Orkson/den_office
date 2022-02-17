@@ -32,23 +32,7 @@
         }
     }
 
-    @{
-        var now = DateTime.Now.Date;
-        var booked = ListOfDates
-            .Select(r => r.ServiceDate)
-            .ToHashSet();
-
-        for (var i = 0; i < 5; i++)
-        {
-            var dateValue = now + TimeSpan.FromHours(10 + i * 0.5f);
-            <label asp-for="ServiceDate">@dateValue.TimeOfDay</label>
-            <input asp-for="ServiceDate" type="radio" id="dat@dateValue.ToString(" hhMM")" value="@dateValue" disabled="@(booked.Contains(dateValue) ? "true" : null)"><br>
-        }
-    }
-
-
-
-
+    
     @foreach (var item in singleDay)
     {
         <a>@item.TimeOfDay</a>
@@ -64,16 +48,39 @@
                     <span asp-validation-for="ServiceDate" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <a>@date1.ToString("dddd, dd MMMM yyyy")</a><br />
 
-                    @foreach (var item in singleDay)
-                    {
+                    @{
 
-                        <label asp-for="ServiceDate">@item.TimeOfDay</label>
-                        <input asp-for="ServiceDate" type="radio" id="@idInMethod" value="@item"><br>
-                        idInMethod++;
+                        for (var x = 0; x < 10; x++)
+                        {
+                            var date = DateTime.Now.Date.AddDays(x);
+                            var booked = ListOfDates
+                                            .Select(r => r.ServiceDate)
+                                            .ToHashSet();
+
+
+                            if ((date.DayOfWeek == DayOfWeek.Saturday) || (date.DayOfWeek == DayOfWeek.Sunday)) { }
+                            else
+                            {
+                                <a>@date.ToString("dddd, dd MMMM yyyy")</a><br />
+                                for (var i = 0; i < 14; i++)
+                                {
+                                    var dateValue = date + TimeSpan.FromHours(10 + i * 0.5f);
+
+                                    <label asp-for="ServiceDate">@dateValue.TimeOfDay</label>
+                                    <input asp-for="ServiceDate" type="radio" id="dat@dateValue.ToString(" hhMM")" value="@dateValue"
+                                           disabled="@(booked.Contains(dateValue) ? "true" : null)"><br>
+                                }
+                            }
+
+                        }
                     }
-                    
+
+
+
+
+
+
 
 
                     <span asp-validation-for="ServiceDate" class="text-danger"></span>
@@ -112,26 +119,6 @@
                     <input type="submit" value="Create" class="btn btn-primary" />
                 </div>
             </form>
-            @foreach (var day in singleDay)
-            {
-                @foreach (Reservation item in ListOfDates)
-                {
-                    <a>@item.ServiceDate.Hour</a>
-                    if (@item.ServiceDate.Hour == day.Hour && item.ServiceDate.Minute == day.Minute)
-                    {
-                        <a>
-                            @item.ServiceDate.Hour tej jest taka data!!!
-                            <script>
-                                document.getElementById("@idInLoops").disabled = true;
-                            </script>
-                        </a>
-                    }
-
-                }
-                idInLoops++;
-
-            }
-
         </div>
     </div>
 
@@ -141,15 +128,4 @@
 
 
 </body>
-<script>
-    function test() {
-        document.getElementById("dat1").disabled = true;
 
-    }
-    function test2() {
-
-        document.getElementById("dat2").disabled = true;
-
-    }
-</script>
- 

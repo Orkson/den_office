@@ -41,9 +41,38 @@ namespace den_office.Controllers
 
 
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder)
         {
-            return View(await _context.Reservation.Include(e=>e.Service).ToListAsync());
+            ViewBag.ResSortParm = String.IsNullOrEmpty(sortOrder) ? "res_desc" : "";
+            ViewBag.ServiceSortParm = sortOrder == "service" ? "service_desc" : "service";
+            
+            //var model =  await _context.Reservation.Include(e => e.Service).ToListAsync();
+            if (sortOrder == "res_desc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ReservationDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "service")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "service_desc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            }
+            else
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ReservationDate).Include(e => e.Service).ToListAsync();
+            }
+
+            return View();
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ReservationsList()
+        {
+            ViewData["model"] = await _context.Reservation.OrderBy(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            
+            return View();
         }
 
         [Authorize(Roles = "Admin")]
@@ -261,6 +290,7 @@ namespace den_office.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            
             var reservation = await _context.Reservation.FindAsync(id);
             _context.Reservation.Remove(reservation);
             await _context.SaveChangesAsync();

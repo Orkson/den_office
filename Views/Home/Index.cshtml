@@ -2,41 +2,100 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    .centered {
+        color: white;
+        font-size:200%;
+        font-family:Georgia;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
+    }
+</style>
 
 
 <div class="row">
-    
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"  style="height:50%; width:50%">
-            
-            <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="~/images/ani-kolleshi-7jjnJ-QA9fY-unsplash.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/images/caroline-lm--m-4tYmtLlI-unsplash.jpg" class="d-block w-100" alt="...">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height:100%; width:100%">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Zbuduj z nami przyszłość</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/caroline-lm--m-4tYmtLlI-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Zbuduj z nami przyszłość</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/ani-kolleshi-7jjnJ-QA9fY-unsplash.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Zbuduj z nami przyszłość</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+
+                    <img src="~/images/yusuf-belek-gHdVUGAJYGo-unsplash.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c" />
+                    <div class="centered">Doświadczenie</div>
+                    <div class="card-body">
+                        <p class="card-text">opis</p>
+
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-    </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/images/enis-yavuz-PGNshUfOuzs-unsplash.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c" />
+                    <div class="centered">Protetyka</div>
+                    <div class="card-body">
+                        <p class="card-text">opis</p>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/images/junior-reis-rE6FqsyyqwM-unsplash.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c" />
+                    <div class="centered">Nasz zespół</div>
+
+                    <div class="card-body">
+                        <p class="card-text">opis</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script>
     $('.carouselExampleFade').carousel()
-    var myCarousel = document.querySelector('#myCarousel')
+    var myCarousel = document.querySelector('#carouselExampleFade')
     var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 10000,
+        interval: 5000,
         wrap: false
     })
 

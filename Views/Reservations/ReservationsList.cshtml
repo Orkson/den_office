@@ -1,0 +1,153 @@
+﻿@model den_office.Models.Reservation
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutSidebar";
+    IEnumerable<Reservation> reservations = ViewData["model"] as IEnumerable<Reservation>;
+}
+<h2 class="text-center">
+    Lista dzisiejszych rezerwacji
+</h2>
+<hr />
+<a asp-action="Createres" role="button" class="btn btn-primary float-end" data-toggle="button" aria-pressed="true">Utwórz nową rezerwację</a>
+
+
+<table class="table" >
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.Service.ServiceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.Status)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.ServiceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.ReservationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.CustomerSurname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(reservations => reservations.CustomerEmail)
+            </th>
+
+
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in reservations)
+        {
+            @if (item.ServiceDate > DateTime.Now.Date)
+            {
+                @if (item.ServiceDate <= DateTime.Now)
+                {
+                    <tr>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.Service.ServiceName)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.Status)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.ServiceDate)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.ReservationDate)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.CustomerName)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.CustomerSurname)
+                            </s>
+                        </td>
+                        <td><s>
+                            @Html.DisplayFor(modelItem => item.CustomerEmail)
+                            </s>
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ReservationId">Edytuj</a>
+                            <a asp-action="Details" asp-route-id="@item.ReservationId">Szczegóły</a>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" asp-action="Delete" asp-route-id="@item.ReservationId">Usuń</a>
+                        </td>
+                    </tr>
+                }
+                @if (item.ServiceDate >= DateTime.Now)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Service.ServiceName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServiceDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReservationDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerSurname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerEmail)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ReservationId">Edytuj</a>
+                        <a asp-action="Details" asp-route-id="@item.ReservationId">Szczegóły</a>
+                        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" asp-action="Delete" asp-route-id="@item.ReservationId">Usuń</a>
+                    </td>
+                </tr>
+                }
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Potwierdź usunięcie rezerwacji Id @item.ReservationId</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form asp-action="Delete">
+                                    <input type="hidden" value="ReservationId" asp-for="ReservationId" />
+                                    <input type="submit" value="Delete" class="btn btn-danger" /> |
+                                </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+
+    </tbody>
+</table>
+
