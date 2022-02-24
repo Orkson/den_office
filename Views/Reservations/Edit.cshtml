@@ -21,7 +21,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="ReservationDate" class="control-label"></label>
-                <input asp-for="ReservationDate" class="form-control" disabled="disabled" />
+                <input asp-for="ReservationDate" class="form-control" readonly/>
+                <input asp-for="ReservationDate" class="form-control" type="hidden" />
+
             </div>
             <div class="form-group">
                 <label asp-for="Service" class="control-label"></label>
@@ -35,24 +37,27 @@
             </div>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                <input asp-for="Status" class="form-control"/>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
 
 
             <div class="form-group">
                 <label asp-for="CustomerName" class="control-label"></label>
-                <input asp-for="CustomerName" class="form-control" disabled="disabled" />
+                <input asp-for="CustomerName" class="form-control" readonly/>
+
                 <span asp-validation-for="CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CustomerSurname" class="control-label"></label>
-                <input asp-for="CustomerSurname" class="form-control" disabled="disabled" />
+                <input asp-for="CustomerSurname" class="form-control" readonly/>
+
                 <span asp-validation-for="CustomerSurname" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CustomerEmail" class="control-label"></label>
-                <input asp-for="CustomerEmail" class="form-control" disabled="disabled" />
+                <input asp-for="CustomerEmail" class="form-control" readonly/>
+
                 <span asp-validation-for="CustomerEmail" class="text-danger"></span>
             </div>
 

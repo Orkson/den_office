@@ -45,7 +45,11 @@ namespace den_office.Controllers
         {
             ViewBag.ResSortParm = String.IsNullOrEmpty(sortOrder) ? "res_desc" : "";
             ViewBag.ServiceSortParm = sortOrder == "service" ? "service_desc" : "service";
-            
+            ViewBag.ServiceNameSortParm = sortOrder == "servicenamedesc" ? "servicename" : "servicenamedesc";
+            ViewBag.CustomerNameSortParm = sortOrder == "customernamedesc" ? "customername" : "customernamedesc";
+            ViewBag.CustomerSurnameSortParm = sortOrder == "customersurnamedesc" ? "customersurname" : "customersurnamedesc";
+            ViewBag.CustomerEmailSortParm = sortOrder == "customeremaildesc" ? "customeremail" : "customeremaildesc";
+
             //var model =  await _context.Reservation.Include(e => e.Service).ToListAsync();
             if (sortOrder == "res_desc")
             {
@@ -58,6 +62,38 @@ namespace den_office.Controllers
             else if (sortOrder == "service_desc")
             {
                 ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "servicename")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ServiceId).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "servicenamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ServiceId).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customername")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerName).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customernamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerName).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customersurname")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerSurname).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customersurnamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerSurname).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customeremail")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerEmail).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customeremaildesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerEmail).Include(e => e.Service).ToListAsync();
             }
             else
             {
@@ -136,7 +172,14 @@ namespace den_office.Controllers
 
             }
 
-            return View(reservation);
+            if (User.IsInRole("Admin"))
+                {
+                return View(reservation);
+                }
+            else
+            {
+                return View();
+            }
 
 
         }
@@ -237,7 +280,7 @@ namespace den_office.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
         {
             if (id != reservation.ReservationId)
             {

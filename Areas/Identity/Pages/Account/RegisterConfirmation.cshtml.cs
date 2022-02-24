@@ -28,6 +28,8 @@ namespace den_office.Areas.Identity.Pages.Account
 
         public string EmailConfirmationUrl { get; set; }
 
+
+
         public async Task<IActionResult> OnGetAsync(string email, string returnUrl = null)
         {
             if (email == null)

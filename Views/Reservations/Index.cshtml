@@ -17,12 +17,11 @@
         <tr>
             
             <th>
-                @Html.DisplayNameFor(reservations => reservations.Service.ServiceName)
+                @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.Service.ServiceName), "Index", new { sortOrder = ViewBag.ServiceNameSortParm })
             </th>
             
             <th>
                 @Html.DisplayNameFor(reservations => reservations.Status)
-
             </th>
             <th>
                 @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.ServiceDate), "Index", new { sortOrder = ViewBag.ServiceSortParm })
@@ -31,13 +30,16 @@
                 @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.ReservationDate), "Index", new { sortOrder = ViewBag.ResSortParm })
             </th>
             <th>
-                @Html.DisplayNameFor(reservations => reservations.CustomerName)
+                @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.CustomerName), "Index", new { sortOrder = ViewBag.CustomerNameSortParm })
+                
             </th>
             <th>
-                @Html.DisplayNameFor(reservations => reservations.CustomerSurname)
+                @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.CustomerSurname), "Index", new { sortOrder = ViewBag.CustomerSurnameSortParm })
+                
             </th>
             <th>
-                @Html.DisplayNameFor(reservations => reservations.CustomerEmail)
+                @Html.ActionLink(@Html.DisplayNameFor(reservations => reservations.CustomerEmail), "Index", new { sortOrder = ViewBag.CustomerEmailSortParm })
+                
             </th>
 
 
@@ -86,14 +88,22 @@
                             <h4 class="modal-title">Potwierdź usunięcie rezerwacji Id @item.ReservationId</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-
+                        @{ 
+                            var myModal ="myModal" + item.ReservationId;
+                        }
                         <!-- Modal body -->
                         <div class="modal-body">
                             <form asp-action="Delete">
                                 <input type="hidden" value="ReservationId" asp-for="ReservationId" />
-                                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                                <input type="submit" value="Delete" class="btn btn-danger" data-target="@myModal" /> |
+                                <a asp-action="Index">Back to List</a>
                             </form>
                         </div>
+
+                        
+
+
+
                         <!-- Modal footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>

@@ -528,3 +528,4 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\C
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateResFinal.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\PartialViewCreate.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsList.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\HelloWorld\MailSender.cshtml.g.cs
