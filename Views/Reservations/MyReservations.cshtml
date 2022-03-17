@@ -1,0 +1,29 @@
+﻿@model IEnumerable<den_office.Models.Reservation>
+@{
+    ViewData["Title"] = "MyReservations";
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "_LayoutSidebar";
+    }
+    else
+    {
+        Layout = "_LayoutSidebarUser";
+    }
+}
+
+
+<h4>Reservation</h4>
+<hr />
+
+@foreach (var item in Model)
+{
+
+    @Html.DisplayFor(modelItem => item.ReservationDate)
+    @Html.DisplayFor(modelItem => item.CustomerSurname)
+    <br>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

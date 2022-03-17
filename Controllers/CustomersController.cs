@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using den_office.ViewModels;
 using den_office.Data;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace den_office.Controllers
 {
@@ -32,6 +33,23 @@ namespace den_office.Controllers
                                       Email = user.Email,
                                   }).ToList();
             return View(customers);
+        }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var customerdetails = await _context.Reservation.Include(e => e.Service)
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
+            if (customerdetails == null)
+            {
+                return NotFound();
+            }
+
+            return View(customerdetails);
         }
     }
 }

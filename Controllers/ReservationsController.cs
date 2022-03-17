@@ -103,6 +103,72 @@ namespace den_office.Controllers
             return View();
         }
 
+
+
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ReservationsHistory(string sortOrder)
+        {
+            ViewBag.ResSortParm = String.IsNullOrEmpty(sortOrder) ? "res_desc" : "";
+            ViewBag.ServiceSortParm = sortOrder == "service" ? "service_desc" : "service";
+            ViewBag.ServiceNameSortParm = sortOrder == "servicenamedesc" ? "servicename" : "servicenamedesc";
+            ViewBag.CustomerNameSortParm = sortOrder == "customernamedesc" ? "customername" : "customernamedesc";
+            ViewBag.CustomerSurnameSortParm = sortOrder == "customersurnamedesc" ? "customersurname" : "customersurnamedesc";
+            ViewBag.CustomerEmailSortParm = sortOrder == "customeremaildesc" ? "customeremail" : "customeremaildesc";
+
+            //var model =  await _context.Reservation.Include(e => e.Service).ToListAsync();
+            if (sortOrder == "res_desc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ReservationDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "service")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "service_desc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ServiceDate).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "servicename")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ServiceId).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "servicenamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.ServiceId).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customername")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerName).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customernamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerName).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customersurname")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerSurname).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customersurnamedesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerSurname).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customeremail")
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.CustomerEmail).Include(e => e.Service).ToListAsync();
+            }
+            else if (sortOrder == "customeremaildesc")
+            {
+                ViewBag.model = await _context.Reservation.OrderByDescending(s => s.CustomerEmail).Include(e => e.Service).ToListAsync();
+            }
+            else
+            {
+                ViewBag.model = await _context.Reservation.OrderBy(s => s.ReservationDate).Include(e => e.Service).ToListAsync();
+            }
+
+            return View();
+        }
+
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ReservationsList()
         {
@@ -111,15 +177,10 @@ namespace den_office.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> ReservationsCalendar()
-        {
-            return View(await _context.Reservation.Include(e => e.Service).ToListAsync());
-        }
         
 
         [HttpGet]
-        public async Task<IActionResult> CreateRes()
+        public async Task<IActionResult> CreateReservation()
         {
             var currentTime = DateTime.Now; //Czy potrzebne?
             //ReservationViewModel model = new ReservationViewModel();
@@ -155,39 +216,41 @@ namespace den_office.Controllers
         [AllowAnonymous]
 
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateRes([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
+        public async Task<IActionResult> CreateReservation([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
         {
-
             var user = await _userManager.GetUserAsync(User);
-           
-
             var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
 
             if (ModelState.IsValid)
             {
-                
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
 
-            }
-
-            if (User.IsInRole("Admin"))
+                if (!User.IsInRole("Admin"))
                 {
-                return View(reservation);
+                    EmailSender emailHelper = new EmailSender();
+                    string date = reservation.ServiceDate.ToString("dddd, dd MMMM yyyy HH:mm");
+                    bool emailResponse = emailHelper.SendConfirm(user.Email, date);
+
+                    ViewData["restype"] = date;
+                    return View("ReservationConfirm");
+
                 }
-            else
-            {
-                return View();
+                else
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+
             }
+
+                return View(reservation);
+                
 
 
         }
 
 
 
-
-        // GET: Reservations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -223,15 +286,11 @@ namespace den_office.Controllers
             return View(await _context.Reservation.ToListAsync());
         }
 
-        // GET: Reservations/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Reservations/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId")] Reservation reservation)
@@ -256,10 +315,7 @@ namespace den_office.Controllers
 
 
 
-
-
-
-        // GET: Reservations/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -275,12 +331,11 @@ namespace den_office.Controllers
             return View(reservation);
         }
 
-        // POST: Reservations/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, 
+            [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
         {
             if (id != reservation.ReservationId)
             {
@@ -310,7 +365,9 @@ namespace den_office.Controllers
             return View(reservation);
         }
 
-        // GET: Reservations/Delete/5
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -328,7 +385,7 @@ namespace den_office.Controllers
             return View(reservation);
         }
 
-        // POST: Reservations/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -352,21 +409,17 @@ namespace den_office.Controllers
 
 
         
-
-        // POST: Reservations/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpGet]
-        public async Task<IActionResult> CreateResFinal()
+        public async Task<IActionResult> MyReservations()
         {
-            var model = await _context.Reservation.Include(e => e.Service).ToListAsync();
-            var currentTime = DateTime.Now;
+            var user = await _userManager.GetUserAsync(User);
+            var model = await _context.Reservation.Include(e => e.Service).Where(e => e.CustomerEmail ==user.UserName).ToListAsync();
             var listOfDates = await _context.Reservation.Where(e => e.ReservationDate.Year >= DateTime.Now.Year
                                                               && e.ReservationDate.Month >= DateTime.Now.Month
                                                               && e.ReservationDate.Day >= DateTime.Now.Day)
                 .Include(e => e.Service)
                     .ToListAsync();
-            return View(listOfDates);
+            return View(model);
         }
 
         [HttpPost]

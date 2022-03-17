@@ -52,9 +52,6 @@ namespace den_office.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Price()
         {
-            var user = await _userManager.GetUserAsync(User);
-            var user2 = user.FirstName;
-            ViewData["Usinger"] = user2;
             return View();
         }
 
@@ -80,14 +77,6 @@ namespace den_office.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Privacy()
         {
-            var user = await _userManager.GetUserAsync(User);
-            var email = user.FirstName;
-            var variable = user.FirstName;
-            ViewData["User"] = user;
-
-            ViewData["Variable"] = variable;
-            ViewData["Email"] = email;
-
             return View();
         }
 

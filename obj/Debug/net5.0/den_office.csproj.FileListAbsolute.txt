@@ -524,8 +524,11 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Gallery.c
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsCalendar.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebar.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateRes.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateResFinal.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\PartialViewCreate.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsList.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\HelloWorld\MailSender.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationConfirm.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateReservation.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\MyReservations.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebarUser.cshtml.g.cs

@@ -106,48 +106,86 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 d-flex flex-column flex-shrink-0 p-3 bg-light" style="height:270px; width:300px">
+                <div class="col-md-4 d-flex flex-column flex-shrink-0 p-3 bg-light" style="height:500px">
                     <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none" asp-area="" asp-controller="Reservations" asp-action="Index">
                         <img src="~/images/logo.png" width="40" height="40">
                         <span class="fs-4">Panel zarządzania</span>
                     </a>
-                    <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a href="#" class="d-flex nav-link align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-                                    Rezerwacje
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Reservations" asp-action="ReservationsList">Lista aktualnych rezerwacji</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Reservations" asp-action="Index">Historia rezerwacji</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Reservations" asp-action="Createres">Stwórz nową rezerwację</a></li>
-                                </ul>
-                            </div>
+                        <li>
+                            <hr />
                         </li>
                         <li>
 
-                            <a asp-area="" asp-controller="Customers" asp-action="Index" class="nav-link link-dark text-decoration-none">
+                            <a asp-area="" asp-controller="Reservations" asp-action="Createreservation" class="nav-link link-dark text-decoration-none">
                                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-                                Klienci
+                                Zarezerwuj termin
                             </a>
 
                         </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a href="#" class="d-flex nav-link align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-                                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-                                    Usługi
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="Index">Lista usług</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="Create">Stwórz nową usługę</a></li>
-                                </ul>
+                        <li>
+                            <a asp-area="" asp-controller="Reservations" asp-action="MyReservations" class="nav-link link-dark text-decoration-none">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+                                Moje rezerwacje
+                            </a>
+                        <li>
+
+                            <a asp-area="" asp-controller="Services" asp-action="Index" class="nav-link link-dark text-decoration-none">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+                                Dostępne usługi
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a asp-area="Identity" asp-page="/Account/Manage/Index" class="nav-link link-dark text-decoration-none">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+                                Moje konto
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <hr />
+                            <br>
+                        </li>
+                        <li style="margin-bottom: 1rem; color:#666666">
+
+                            <div style="text-align:left;">
+                                Poniedziałek
+                                <span style="float:right;">8:00 - 17:00</span>
+                            </div>
+                            <div style="text-align:left;">
+                                Wtorek
+                                <span style="float:right;">8:00 - 17:00</span>
+                            </div>
+                            <div style="text-align:left;">
+                                Środa
+                                <span style="float:right;">8:00 - 17:00</span>
+                            </div>
+                            <div style="text-align:left;">
+                                Czwartek
+                                <span style="float:right;">8:00 - 17:00</span>
+                            </div>
+                            <div style="text-align:left;">
+                                Piątek
+                                <span style="float:right;">8:00 - 17:00</span>
+                            </div>
+                            <div style="text-align:left;">
+                                Sobota-Niedziela
+                                <span style="float:right;">nieczynne</span>
                             </div>
                         </li>
+                        <li>
+                            
+                                
+                            <span style="float:right; color:#666666">Kontakt:   000-000-000</span>
+                            
+                        </li>
+
+
+
                     </ul>
-                    <hr>
                 </div>
 
 

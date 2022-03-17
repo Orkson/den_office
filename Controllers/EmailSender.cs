@@ -16,8 +16,7 @@ namespace den_office.Controllers
         }
         public bool Execute(string userEmail, string confirmationLink)
         {
-            string fromEmail = "glackkoteu@gmail.com";
-            //string toEmail = "tefrak74@gmail.com";
+            string fromEmail = "potwierdzenie.projekt@gmail.com";
             MailMessage mailConfirmation = new MailMessage();
             mailConfirmation.From = new MailAddress(fromEmail);
             mailConfirmation.To.Add(new MailAddress(userEmail));
@@ -26,7 +25,7 @@ namespace den_office.Controllers
             mailConfirmation.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);   
             NetworkCredential basicCredential1 = new
-            NetworkCredential("glackkoteu@gmail.com", "gregory77");
+            NetworkCredential("potwierdzenie.projekt@gmail.com", "Ad12345!");
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
             client.Credentials = basicCredential1;
@@ -34,7 +33,26 @@ namespace den_office.Controllers
             return true;
 
             }
+        public bool SendConfirm(string userEmail, string date)
+        {
+            string fromEmail = "potwierdzenie.projekt@gmail.com";
+            MailMessage mailConfirmation = new MailMessage();
+            mailConfirmation.From = new MailAddress(fromEmail);
+            mailConfirmation.To.Add(new MailAddress(userEmail));
+            mailConfirmation.Subject = "Potwierdzenie";
+            mailConfirmation.Body = date + " " + userEmail;
+            mailConfirmation.IsBodyHtml = true;
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            NetworkCredential basicCredential1 = new
+            NetworkCredential("potwierdzenie.projekt@gmail.com", "Ad12345!");
+            client.EnableSsl = true;
+            client.UseDefaultCredentials = false;
+            client.Credentials = basicCredential1;
+            client.Send(mailConfirmation);
+            return true;
 
-        
+        }
+
+
     }
 }

@@ -45,10 +45,10 @@
                         <a class="nav-link px-4 pt-3 dropdown-toggle" href="#" id="1" data-bs-toggle="dropdown" aria-expanded="false">KLINIKA</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">O klinice</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Staff">Personel</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Gallery">Galeria</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a></li>
-                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Personel</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Galeria</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Kontakt</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Polityka prywatności</a></li>
                         </ul>
                     </li>
 
@@ -56,10 +56,10 @@
 
                 </ul>
                 <div class="nav-item">
-                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price" title="Oferta">OFERTA</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price" title="Cennik">CENNIK</a>
                 </div>
                 @if (User.IsInRole("Admin"))
                 {
@@ -68,12 +68,19 @@
                         <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Reservations" asp-action="Index">Panel zarządzania</a>
                     </div>
                 }
+                else if (SignInManager.IsSignedIn(User) && !User.IsInRole("Admin"))
+                {
+                    <div class="nav-item">
+                        <a class="nav-link px-4 pt-3" asp-controller="Reservations" asp-action="CreateReservation" title="Utwórz rezerwację">Utwórz rezerwację</a>
+                    </div>
+                }
+
                 @if (SignInManager.IsSignedIn(User))
                 {
 
 
                     <div class="nav-item">
-                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Moje konto">Moje konto</a>
                     </div>
                     <div class="nav-item text-nowrap">
                         <form class="form-inline " asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
@@ -121,7 +128,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Nazwa gabinetu - stopka - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - DentOptimal - Wrocław <a asp-area="" asp-controller="Home" asp-action="About">  Więcej o nas </a><a asp-area="" asp-controller="Home" asp-action="About">    Kontakt</a>
         </div>
     </footer>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
