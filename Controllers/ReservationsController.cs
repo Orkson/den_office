@@ -334,8 +334,7 @@ namespace den_office.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, 
-            [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Status,ServiceDate,ReservationDate,ServiceId,CustomerName,CustomerSurname,CustomerEmail")] Reservation reservation)
         {
             if (id != reservation.ReservationId)
             {
@@ -366,8 +365,6 @@ namespace den_office.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
