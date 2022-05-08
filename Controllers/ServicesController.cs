@@ -21,6 +21,7 @@ namespace den_office.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Services.ToListAsync());

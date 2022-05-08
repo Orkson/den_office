@@ -141,7 +141,6 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\den_office.TagHelpers.inpu
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\den_office.TagHelpers.output.cache
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\den_office.RazorCoreGenerate.cache
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -185,8 +184,6 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\D
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\Edit.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\Index.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Customers\Index.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Offer.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Price.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Services\Create.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Services\Delete.cshtml.g.cs
@@ -520,15 +517,10 @@ D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Owin.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\libman.json
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\UserInfo.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Gallery.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsCalendar.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebar.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\PartialViewCreate.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationsList.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\HelloWorld\MailSender.cshtml.g.cs
-D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\ReservationConfirm.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\CreateReservation.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Reservations\MyReservations.cshtml.g.cs
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Shared\_LayoutSidebarUser.cshtml.g.cs
+D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Customers\Details.cshtml.g.cs

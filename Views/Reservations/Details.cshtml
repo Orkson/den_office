@@ -18,13 +18,6 @@
         </dd>
         <div class="col-sm-4"></div>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class="col-sm-6">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <div class="col-sm-4"></div>
-        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ServiceDate)
         </dt>
         <dd class="col-sm-6">
@@ -62,7 +55,8 @@
 
 </div>
 <hr />
-    <div class="float-end">
-        <a asp-action="Edit" asp-route-id="@Model.ReservationId">Edit</a> |
-        <a asp-action="Index">Back to List</a>
+    <div class="d-flex justify-content-center" style="margin-top:40px">
+        <a class="btn btn-primary" style="margin-right:20px" asp-action="Index">Powrót do listy rezerwacji</a>
+        <a class="btn btn-secondary" style="margin-right:20px" asp-action="Edit" asp-route-id="@Model.ReservationId">Edytuj rezerwację</a>
+        <a class="btn btn-danger" style="margin-right:20px" asp-action="Delete" asp-route-id="@Model.ReservationId">Usuń rezerwację</a>
     </div>

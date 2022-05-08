@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Mail;
+using Microsoft.Extensions.Configuration;
 
 namespace den_office.Controllers
 {
@@ -13,9 +14,10 @@ namespace den_office.Controllers
         public EmailSender()
         {
             
-        }
+    }
         public bool Execute(string userEmail, string confirmationLink)
         {
+        
             string fromEmail = "potwierdzenie.projekt@gmail.com";
             MailMessage mailConfirmation = new MailMessage();
             mailConfirmation.From = new MailAddress(fromEmail);
