@@ -17,6 +17,11 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+<<<<<<< Updated upstream
+=======
+    <ShowAllFiles>false</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>D:\Projects\C#\den_office\den_office\Properties\PublishProfiles\Testerowanie - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+>>>>>>> Stashed changes
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

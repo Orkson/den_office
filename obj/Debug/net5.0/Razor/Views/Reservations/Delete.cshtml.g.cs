@@ -28,7 +28,9 @@ using den_office.Models;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7e24e284c8b2ec4ded043ea370d39670db251956", @"/Views/Reservations/Delete.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9604176834238a9f8114d1b1988ebee5998c835d", @"/Views/_ViewImports.cshtml")]
+    #nullable restore
     public class Views_Reservations_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<den_office.Models.Reservation>
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "hidden", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -133,10 +135,65 @@ using den_office.Models;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< Updated upstream
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e24e284c8b2ec4ded043ea370d39670db2519567290", async() => {
                 WriteLiteral("\r\n        ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7e24e284c8b2ec4ded043ea370d39670db2519567556", async() => {
+=======
+            WriteLiteral("\r\n            </dt>\r\n            <dd class=\"col-sm-6\">\r\n                ");
+#nullable restore
+#line 41 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+           Write(Html.DisplayFor(model => model.CustomerName));
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("\r\n            </dd>\r\n            <div class=\"col-sm-4\"></div>\r\n            <dt class=\"col-sm-2\">\r\n                ");
+#nullable restore
+#line 45 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+           Write(Html.DisplayNameFor(model => model.CustomerSurname));
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("\r\n            </dt>\r\n            <dd class=\"col-sm-6\">\r\n                ");
+#nullable restore
+#line 48 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+           Write(Html.DisplayFor(model => model.CustomerSurname));
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("\r\n            </dd>\r\n            <div class=\"col-sm-4\"></div>\r\n            <dt class=\"col-sm-2\">\r\n                ");
+#nullable restore
+#line 52 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+           Write(Html.DisplayNameFor(model => model.CustomerEmail));
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("\r\n            </dt>\r\n            <dd class=\"col-sm-6\">\r\n                ");
+#nullable restore
+#line 55 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+           Write(Html.DisplayFor(model => model.CustomerEmail));
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("\r\n            </dd>\r\n");
+#nullable restore
+#line 57 "D:\Projects\C#\den_office\den_office\Views\Reservations\Delete.cshtml"
+            }
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("        </dl>\r\n        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287474de86df526441ad01da4b421d4ee17d35b011228", async() => {
+                WriteLiteral("\r\n            ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "287474de86df526441ad01da4b421d4ee17d35b011499", async() => {
+>>>>>>> Stashed changes
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -158,9 +215,15 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 }
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
+<<<<<<< Updated upstream
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-danger\" /> |\r\n        ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e24e284c8b2ec4ded043ea370d39670db2519569332", async() => {
                     WriteLiteral("Back to List");
+=======
+                WriteLiteral("\r\n            <input type=\"submit\" value=\"Usuń\" class=\"btn btn-danger\" />\r\n            ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287474de86df526441ad01da4b421d4ee17d35b013291", async() => {
+                    WriteLiteral("Anuluj");
+>>>>>>> Stashed changes
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
@@ -193,16 +256,26 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("\r\n</div>\r\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<den_office.Models.Reservation> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<den_office.Models.Reservation> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591

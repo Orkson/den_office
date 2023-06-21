@@ -26,9 +26,32 @@ using den_office.Models;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< Updated upstream:obj/Debug/net5.0/Razor/Views/HelloWorld/Index.cshtml.g.cs
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3865ace2dd8761528844e9f58e3cdfb513cc67a1", @"/Views/HelloWorld/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9604176834238a9f8114d1b1988ebee5998c835d", @"/Views/_ViewImports.cshtml")]
     public class Views_HelloWorld_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<den_office.Tests.Game>>
+=======
+#nullable restore
+#line 3 "D:\Projects\C#\den_office\den_office\Areas\Identity\Pages\_ViewImports.cshtml"
+using den_office.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\Projects\C#\den_office\den_office\Areas\Identity\Pages\Account\_ViewImports.cshtml"
+using den_office.Areas.Identity.Pages.Account;
+
+#line default
+#line hidden
+#nullable disable
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fa2ad01473fa832304d2166b6c6d5536eb62725", @"/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b3b7bf1e1b2cd4963fb009556580aadd0505661", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a01b4bc6d3c474ceed58a34be2ec613de92a82d5", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
+    #nullable restore
+    public class Areas_Identity_Pages_Account_ResetPasswordConfirmation : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
+    #nullable disable
+>>>>>>> Stashed changes:obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml.g.cs
     {
         #line hidden
         #pragma warning disable 0649
@@ -89,7 +112,13 @@ using den_office.Models;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< Updated upstream:obj/Debug/net5.0/Razor/Views/HelloWorld/Index.cshtml.g.cs
                 WriteLiteral("    </table>\r\n");
+=======
+            WriteLiteral("</h1>\r\n<p>\r\n    Your password has been reset. Please ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fa2ad01473fa832304d2166b6c6d5536eb627254751", async() => {
+                WriteLiteral("click here to log in");
+>>>>>>> Stashed changes:obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml.g.cs
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper>();
@@ -104,16 +133,32 @@ using den_office.Models;
             WriteLiteral("\r\n\r\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+<<<<<<< Updated upstream:obj/Debug/net5.0/Razor/Views/HelloWorld/Index.cshtml.g.cs
         public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<IEnumerable<den_office.Tests.Game>> Html { get; private set; }
+=======
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<ResetPasswordConfirmationModel> Html { get; private set; } = default!;
+        #nullable disable
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<ResetPasswordConfirmationModel> ViewData => (global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<ResetPasswordConfirmationModel>)PageContext?.ViewData;
+        public ResetPasswordConfirmationModel Model => ViewData.Model;
+>>>>>>> Stashed changes:obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml.g.cs
     }
 }
 #pragma warning restore 1591
