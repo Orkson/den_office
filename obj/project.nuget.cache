@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "8nk1ysjpDTvgUhJdwmG1RSXCFcYi4sD2q5fEt1vAzrGFEJfNhq9Tjhdn49aMMwPegxUVCddqM2xDSdytVWBUrQ==",
+=======
+  "dgSpecHash": "h7sJfbTP2msT6Zd/BCZQtzBBa/gPBDDX6TToFre7zaGSCOoHjiV9YtEOczG0PQJb8V1XWoPuutuSIHratojTtg==",
+>>>>>>> d2acf5ae4fea832f2816cf27f7bf46bba95601b7
   "success": true,
   "projectFilePath": "D:\\Projects\\C#\\den_office\\den_office\\den_office.csproj",
   "expectedPackageFiles": [

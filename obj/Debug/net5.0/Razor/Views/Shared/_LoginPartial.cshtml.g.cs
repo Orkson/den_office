@@ -39,6 +39,7 @@ using den_office.Models;
         #pragma warning restore 1998
         #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+<<<<<<< HEAD
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
         #nullable disable
         #nullable restore
@@ -50,6 +51,9 @@ using den_office.Models;
         public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
         #nullable disable
         #nullable restore
+=======
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+>>>>>>> d2acf5ae4fea832f2816cf27f7bf46bba95601b7
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
         #nullable disable

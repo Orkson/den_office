@@ -470,6 +470,7 @@ D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\refs\WindowsBase.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 D:\Projects\C#\den_office\den_office\bin\Debug\net5.0\Microsoft.VisualStudio.Web.BrowserLink.dll
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
@@ -530,3 +531,5 @@ D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\Razor\Views\Customers\Deta
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\den_office.csproj.AssemblyReference.cache
 D:\Projects\C#\den_office\den_office\obj\Debug\net5.0\refint\den_office.dll
 >>>>>>> Stashed changes
+=======
+>>>>>>> d2acf5ae4fea832f2816cf27f7bf46bba95601b7

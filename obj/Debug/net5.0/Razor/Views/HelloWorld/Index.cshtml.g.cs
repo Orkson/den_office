@@ -26,7 +26,10 @@ using den_office.Models;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< HEAD
 <<<<<<< Updated upstream:obj/Debug/net5.0/Razor/Views/HelloWorld/Index.cshtml.g.cs
+=======
+>>>>>>> d2acf5ae4fea832f2816cf27f7bf46bba95601b7
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3865ace2dd8761528844e9f58e3cdfb513cc67a1", @"/Views/HelloWorld/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9604176834238a9f8114d1b1988ebee5998c835d", @"/Views/_ViewImports.cshtml")]
     public class Views_HelloWorld_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<den_office.Tests.Game>>
