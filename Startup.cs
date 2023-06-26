@@ -37,33 +37,14 @@ namespace den_office
             Configuration["pass"] = "Ad12345!";
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-<<<<<<< Updated upstream
                     Configuration.GetConnectionString("DefaultConnection")));
-<<<<<<< HEAD
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-              .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
-=======
-                    Configuration.GetConnectionString("Server=tcp:testerowanie.database.windows.net,1433;Initial Catalog=aspnet-den_office-73054B0A-4C82-4C36-AC3F-8A2152C13DDF;Persist Security Info=False;User ID=admin1;Password={Menele00};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")));
-=======
->>>>>>> refreshment
+
+                    Configuration.GetConnectionString("Server=tcp:testerowanie.database.windows.net,1433;Initial Catalog=aspnet-den_office-73054B0A-4C82-4C36-AC3F-8A2152C13DDF;Persist Security Info=False;User ID=admin1;Password={Menele00};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews()            
                     .AddRazorRuntimeCompilation();
-<<<<<<< HEAD
-
-            services.AddAuthorization(options =>
-            {
-                options.FallbackPolicy = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .Build();
-            });
-
->>>>>>> Stashed changes
-=======
->>>>>>> refreshment
 
             services.AddAuthorization(options =>
             {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XFoiL/ir7Q/HN5I+iXwB04TWKgJIxJez54x/cAitsG8=",
+  "Hash": "7RM+WV4v9/T+k7E4iAGAFlrKQ1i7Z5K9sn/5hcWZZJo=",
   "Source": "den_office",
   "BasePath": "_content/den_office",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "den_office\\wwwroot",
       "Source": "den_office",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "Pattern": "**"
     }
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "C:\\Users\\Marcin\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.12\\staticwebassets\\V4\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\dashboard.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\dashboard.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/dashboard.css",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\dashboard.rtl.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\dashboard.rtl.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/dashboard.rtl.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\fontawesome.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\fontawesome.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/fontawesome.css",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\navbar.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\navbar.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/navbar.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\css\\navbar.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\pricing.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\pricing.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/pricing.css",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pricing.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\sidebars.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\sidebars.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/sidebars.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sidebars.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\css\\site.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\favicon.ico",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\ani-kolleshi-7jjnJ-QA9fY-unsplash.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\ani-kolleshi-7jjnJ-QA9fY-unsplash.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/ani-kolleshi-7jjnJ-QA9fY-unsplash.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ani-kolleshi-7jjnJ-QA9fY-unsplash.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\atikah-akhtar-XJptUS8nbhs-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\atikah-akhtar-XJptUS8nbhs-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/atikah-akhtar-XJptUS8nbhs-unsplash.jpg",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\images\\atikah-akhtar-XJptUS8nbhs-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\benyamin-bohlouli-e7MJLM5VGjY-unsplash.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\benyamin-bohlouli-e7MJLM5VGjY-unsplash.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\images\\benyamin-bohlouli-e7MJLM5VGjY-unsplash.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\caroline-lm--m-4tYmtLlI-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\caroline-lm--m-4tYmtLlI-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/caroline-lm--m-4tYmtLlI-unsplash.jpg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\images\\caroline-lm--m-4tYmtLlI-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\enis-yavuz-PGNshUfOuzs-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\enis-yavuz-PGNshUfOuzs-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/enis-yavuz-PGNshUfOuzs-unsplash.jpg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\enis-yavuz-PGNshUfOuzs-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\jonathan-borba-hl6uG9cHW5A-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\jonathan-borba-hl6uG9cHW5A-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/jonathan-borba-hl6uG9cHW5A-unsplash.jpg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jonathan-borba-hl6uG9cHW5A-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\jonathan-borba-v_2FRXEba94-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\jonathan-borba-v_2FRXEba94-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/jonathan-borba-v_2FRXEba94-unsplash.jpg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jonathan-borba-v_2FRXEba94-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\jonathan-borba-Yui-VjmS8AA-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\jonathan-borba-Yui-VjmS8AA-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/jonathan-borba-Yui-VjmS8AA-unsplash.jpg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jonathan-borba-Yui-VjmS8AA-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\junior-reis-rE6FqsyyqwM-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\junior-reis-rE6FqsyyqwM-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/junior-reis-rE6FqsyyqwM-unsplash.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\images\\junior-reis-rE6FqsyyqwM-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\logo.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\logo.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\logowithname.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\logowithname.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/logowithname.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logowithname.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\nate-johnston-UhVxAkKw8gQ-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\nate-johnston-UhVxAkKw8gQ-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/nate-johnston-UhVxAkKw8gQ-unsplash.jpg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\images\\nate-johnston-UhVxAkKw8gQ-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\images\\yusuf-belek-gHdVUGAJYGo-unsplash.jpg",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\images\\yusuf-belek-gHdVUGAJYGo-unsplash.jpg",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "images/yusuf-belek-gHdVUGAJYGo-unsplash.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\yusuf-belek-gHdVUGAJYGo-unsplash.jpg"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\js\\CreateViewJS.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\js\\CreateViewJS.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "js/CreateViewJS.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CreateViewJS.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\js\\dashboard.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\js\\dashboard.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "js/dashboard.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\js\\sidebars.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\js\\sidebars.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "js/sidebars.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sidebars.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\js\\site.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_accordion.scss",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_accordion.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_alert.scss",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_alert.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_badge.scss",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_badge.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_breadcrumb.scss",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_button-group.scss",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_button-group.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_buttons.scss",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_buttons.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_card.scss",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_card.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_carousel.scss",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_carousel.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_close.scss",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_close.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_containers.scss",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_containers.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_dropdown.scss",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_forms.scss",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_forms.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_functions.scss",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_functions.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_grid.scss",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_grid.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_helpers.scss",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_helpers.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_images.scss",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_images.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_list-group.scss",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_list-group.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_mixins.scss",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_mixins.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_modal.scss",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_modal.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_nav.scss",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_nav.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_navbar.scss",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_navbar.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_offcanvas.scss",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_pagination.scss",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_pagination.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_placeholders.scss",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_popover.scss",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_popover.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_progress.scss",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_progress.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_reboot.scss",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_reboot.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_root.scss",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_root.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_spinners.scss",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_spinners.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_tables.scss",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tables.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_toasts.scss",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_toasts.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_tooltip.scss",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_transitions.scss",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_transitions.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_type.scss",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_type.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_utilities.scss",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_utilities.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/_variables.scss",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_variables.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/bootstrap.scss",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/bootstrap-grid.scss",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/bootstrap-reboot.scss",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/bootstrap-utilities.scss",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_floating-labels.scss",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_form-check.scss",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_form-control.scss",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_form-range.scss",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_form-select.scss",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_form-text.scss",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_input-group.scss",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_labels.scss",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/forms/_validation.scss",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_clearfix.scss",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_colored-links.scss",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_position.scss",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_ratio.scss",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_stacks.scss",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_stretched-link.scss",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_text-truncation.scss",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_visually-hidden.scss",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/helpers/_vr.scss",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_alert.scss",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_backdrop.scss",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_border-radius.scss",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_box-shadow.scss",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_breakpoints.scss",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_buttons.scss",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_caret.scss",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_clearfix.scss",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_color-scheme.scss",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_container.scss",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_deprecate.scss",
       "AssetKind": "All",
@@ -2975,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_forms.scss",
       "AssetKind": "All",
@@ -2992,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_gradients.scss",
       "AssetKind": "All",
@@ -3009,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_grid.scss",
       "AssetKind": "All",
@@ -3026,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_image.scss",
       "AssetKind": "All",
@@ -3043,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_list-group.scss",
       "AssetKind": "All",
@@ -3060,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_lists.scss",
       "AssetKind": "All",
@@ -3077,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_pagination.scss",
       "AssetKind": "All",
@@ -3094,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_reset-text.scss",
       "AssetKind": "All",
@@ -3111,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_resize.scss",
       "AssetKind": "All",
@@ -3128,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_table-variants.scss",
       "AssetKind": "All",
@@ -3145,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_text-truncate.scss",
       "AssetKind": "All",
@@ -3162,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_transition.scss",
       "AssetKind": "All",
@@ -3179,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_utilities.scss",
       "AssetKind": "All",
@@ -3196,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/mixins/_visually-hidden.scss",
       "AssetKind": "All",
@@ -3213,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/utilities/_api.scss",
       "AssetKind": "All",
@@ -3230,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/bootstrap/scss/vendor/_rfs.scss",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3264,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3281,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3298,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery\\jquery-ui-1.13.0.custom.zip",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery\\jquery-ui-1.13.0.custom.zip",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery/jquery-ui-1.13.0.custom.zip",
       "AssetKind": "All",
@@ -3315,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery-ui-1.13.0.custom.zip"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3332,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\AUTHORS.txt",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\AUTHORS.txt",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/AUTHORS.txt",
       "AssetKind": "All",
@@ -3349,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\AUTHORS.txt"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\external\\jquery\\jquery.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\external\\jquery\\jquery.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/external/jquery/jquery.js",
       "AssetKind": "All",
@@ -3366,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\external\\jquery\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_444444_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_444444_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_444444_256x240.png",
       "AssetKind": "All",
@@ -3383,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_444444_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_555555_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_555555_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_555555_256x240.png",
       "AssetKind": "All",
@@ -3400,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_555555_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777620_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777620_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_777620_256x240.png",
       "AssetKind": "All",
@@ -3417,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777620_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777777_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777777_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_777777_256x240.png",
       "AssetKind": "All",
@@ -3434,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_777777_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_cc0000_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_cc0000_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_cc0000_256x240.png",
       "AssetKind": "All",
@@ -3451,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_cc0000_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_ffffff_256x240.png",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_ffffff_256x240.png",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/images/ui-icons_ffffff_256x240.png",
       "AssetKind": "All",
@@ -3468,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\images\\ui-icons_ffffff_256x240.png"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\index.html",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\index.html",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/index.html",
       "AssetKind": "All",
@@ -3485,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\index.html"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.css",
       "AssetKind": "All",
@@ -3502,10 +3502,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.js",
       "AssetKind": "All",
@@ -3519,10 +3519,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.min.css",
       "AssetKind": "All",
@@ -3536,10 +3536,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.min.js",
       "AssetKind": "All",
@@ -3553,10 +3553,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.structure.css",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.structure.min.css",
       "AssetKind": "All",
@@ -3587,10 +3587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.structure.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.theme.css",
       "AssetKind": "All",
@@ -3604,10 +3604,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.min.css",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.min.css",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/jquery-ui.theme.min.css",
       "AssetKind": "All",
@@ -3621,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\jquery-ui.theme.min.css"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\LICENSE.txt",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\LICENSE.txt",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/LICENSE.txt",
       "AssetKind": "All",
@@ -3638,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\package.json",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-ui-1.13.0.custom\\package.json",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-ui-1.13.0.custom/package.json",
       "AssetKind": "All",
@@ -3655,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-ui-1.13.0.custom\\package.json"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3672,10 +3672,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3689,10 +3689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3706,10 +3706,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3723,10 +3723,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3740,10 +3740,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3757,10 +3757,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3774,10 +3774,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "den_office",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\C#\\den_office\\den_office\\wwwroot\\",
+      "ContentRoot": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\wwwroot\\",
       "BasePath": "_content/den_office",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
