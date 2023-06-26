@@ -2,13 +2,23 @@
 
 @{
     ViewData["Title"] = "Index";
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "_LayoutSidebar";
+    }
+    else
+    {
+        Layout = "_LayoutSidebarUser";
+    }
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h2 class="text-center">
+    Lista usług
+</h2>
+<hr />
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Create" role="button" class="btn btn-primary float-end" data-toggle="button" aria-pressed="true">Utwórz nową usługę</a>
+}
 <table class="table">
     <thead>
         <tr>
@@ -18,24 +28,27 @@
             <th>
                 @Html.DisplayNameFor(model => model.ServiceDuration)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServiceName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServiceDuration)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Details" asp-route-id="@item.ServiceId">@Html.DisplayFor(model => item.ServiceName)</a>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(model => item.ServiceName)
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServiceDuration)
+                </td>
+
+            </tr>
+        }
     </tbody>
 </table>

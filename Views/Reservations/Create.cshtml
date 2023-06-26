@@ -3,35 +3,77 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = "_LayoutSidebar";
+
+
 }
 
-<h1>Create</h1>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<p> @ViewData["User"] </p>
+<p> @ViewData["Email"]</p>
 
-<h4>Reservation</h4>
+<h2 class="text-center">Stwórz nową rezerwację</h2>
 <hr />
+@{
+    DateTime date1 = DateTime.Now;
+
+}
+
+
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Service" class="control-label"></label>
-                <input asp-for="Service" class="form-control" />
-                <span asp-validation-for="Service" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                <input type="hidden" asp-for="Status" class="form-control" value="@User.Identity.Name" />
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ServiceDate" class="control-label"></label>
+                <a>@date1.ToString("dddd, dd MMMM yyyy")</a><br />
+
+                @{
+
+                    TimeSpan ts1 = new TimeSpan(10, 00, 0);
+                    date1 = date1.Date + ts1;
+
+
+                }
+                <label asp-for="ServiceDate">@date1</label>
+                <input asp-for="ServiceDate" type="radio" value="@date1"><br>
+                
+                @{
+                    TimeSpan ts2 = new TimeSpan(10, 30, 0);
+                    date1 = date1.Date + ts2;
+                }
+
+                <label asp-for="ServiceDate">date1</label>
+                <input asp-for="ServiceDate" type="radio" value="@date1"><br>
+
+
+
+
+                <!--<label asp-for="ServiceDate" class="control-label"></label>
                 <input asp-for="ServiceDate" class="form-control" />
+                -->
+
                 <span asp-validation-for="ServiceDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReservationDate" class="control-label"></label>
-                <input asp-for="ReservationDate" class="form-control" />
+                <input type="hidden" asp-for="ReservationDate" class="form-control" value="@DateTime.Now" />
+
                 <span asp-validation-for="ReservationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="ServiceId" class="form-select">
+                    <option selected disabled>Wybierz usługę</option>
+                    <option value="1">Przegląd techniczny stanu uzębienia</option>
+                    <option value="2">Montowanie plomby</option>
+                    <option value="3">Eksmisja Zęba</option>
+                </select>
+                <span asp-validation-for="ServiceId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -39,8 +81,3 @@
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

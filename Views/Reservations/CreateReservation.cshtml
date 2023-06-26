@@ -1,0 +1,244 @@
+﻿@model den_office.Models.Reservation
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<head>
+    <link rel="stylesheet" href="~/lib/jquery-ui-1.13.0.custom/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+
+</head>
+<body>
+
+
+    @{
+        IEnumerable<Reservation> ListOfDates = ViewData["ListOfDates"] as IEnumerable<Reservation>;
+        if (User.IsInRole("Admin"))
+        {
+            Layout = "_LayoutSidebar";
+        }
+        else
+        {
+            Layout = "_LayoutSidebarUser";
+        }
+        DateTime dateNow = DateTime.Now;
+
+        
+    }
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="CreateReservation">
+
+                <h2 class="text-center">Stwórz nową rezerwację</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-check">
+                    <span asp-validation-for="ServiceDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+
+                    @{
+
+                        var booked = ListOfDates
+                                        .Select(r => r.ServiceDate)
+                                        .ToHashSet();
+                        var date = DateTime.Now.Date;
+
+                        int variable = 0;
+
+
+
+                                        <select class="form-select p-2" name="option1" id="option1">
+                                            <option id="Select" value="Select">Wybierz datę </option>
+                                            @for (var x = 0; x < 10; x++)
+                                            {
+
+                                                if (date.DayOfWeek == DayOfWeek.Saturday)
+                                                {
+                                                    date = date.AddDays(2);
+                                                    <option value="@variable" id="@variable">@date.ToString("dd MMMM, dddd")</option>
+                                                }
+                                                else if (date.DayOfWeek == DayOfWeek.Sunday)
+                                                {
+                                                    date = date.AddDays(1);
+                                                    <option value="@variable" id="@variable">@date.ToString("dd MMMM, dddd")</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@variable" id="@variable">@date.ToString("dd MMMM, dddd")</option>
+                                                }
+                                                date = date.AddDays(1);
+                                                variable++;
+                                            }
+                                        </select>
+
+                        <select class="form-select p-2" style="margin-top:20px" asp-for="ServiceDate" id="option2">
+                            <option selected disabled value="Select">Wybierz godzinę</option>
+                            @{ var date2 = DateTime.Now.Date;
+                                int variable2 = 0;
+                            }
+                            @for (var x = 0; x < 10; x++)
+
+                            {
+                                @for (var t = 0; t < 14; t++)
+                                {
+                                    var dateValue22 = TimeSpan.FromHours(10 + t * 0.5f);
+                                    var date3 = date2 + dateValue22;
+                                    if (booked.Contains(date3) ||
+                                    (date3.DayOfWeek == dateNow.DayOfWeek && date3.TimeOfDay < dateNow.TimeOfDay))
+                                    {
+                                    }
+                                    else if (date2.DayOfWeek == DayOfWeek.Saturday)
+                                    {
+                                        date2 = date2.AddDays(2);
+                                        <option value="@date3" id="@variable2">@date3.TimeOfDay</option>
+                                    }
+                                    else if (date2.DayOfWeek == DayOfWeek.Sunday)
+                                    {
+                                        date2 = date2.AddDays(1);
+                                        <option value="@date3" id="@variable2">@date3.TimeOfDay</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@date3" id="@variable2">@date3.TimeOfDay</option>
+                                    }
+
+                                }
+                                variable2++;
+                                date2 = date2.AddDays(1);
+                                
+                            }
+
+                        </select>
+
+                                // if ((date.DayOfWeek == DayOfWeek.Saturday) || (date.DayOfWeek == DayOfWeek.Sunday)) { }             //sprawdza czy nie weekend
+                                // else                                                                                                //jeśli jest to nic nie robi
+                                //  {
+                                //
+                                //<a>@date.ToString("dddd, dd MMMM yyyy")</a>
+                                //<br />
+                                //      for (var i = 0; i < 14; i++)                                                                    //pętla 14 razy tyle ile
+                                //     {                                                                                               //dostępnych godzin w dniu
+                                //         var dateValue = date + TimeSpan.FromHours(10 + i * 0.5f);
+                                //
+                                //<input asp-for="ServiceDate" type="radio" id="dat@dateValue.ToString(" hhMM")" value="@dateValue "
+                                //disabled="@(booked.Contains(dateValue) ||
+                                //(dateValue.DayOfWeek= =dateNow.DayOfWeek && dateValue.TimeOfDay
+                                // <dateNow.TimeOfDay) ? "true" : null)">
+                                //    <br>
+                                //     }
+                                // }
+                                
+                           }
+                    
+
+
+
+
+
+
+
+
+                    <span asp-validation-for="ServiceDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="ReservationDate" class="form-control" value="@DateTime.Now" />
+                    <span asp-validation-for="ReservationDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="CustomerName" class="form-control" value="@ViewData["firstname"]" />
+                    <span asp-validation-for="CustomerName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="CustomerSurname" class="form-control" value="@ViewData["surname"]" />
+                    <span asp-validation-for="CustomerSurname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="CustomerEmail" class="form-control" value="@ViewData["email"]" />
+                    <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                </div>
+
+                <div class="form-group" style="margin-top:20px">
+                    <select asp-for="ServiceId" class="form-select" id="option3">
+                        <option value="Select" selected disabled>Wybierz usługę</option>
+                        <option value="1">Okresowe badanie stomatologiczne</option>
+                        <option value="2">Konsultacja lekarska</option>
+                        <option value="3">Piaskowanie</option>
+                        <option value="4">Fluoryzacja</option>
+                        <option value="5">Wybielanie zębów</option>
+                        <option value="6">Ekstrakcja zęba mlecznego</option>
+                        <option value="7">Ekstrakcja zęba stałego</option>
+                        <option value="8">Chirurgiczna ekstrakcja zęba</option>
+                    </select>
+                    <span asp-validation-for="ServiceId" class="text-danger"></span>
+                </div>
+
+
+
+
+                <div class="form-group d-flex justify-content-center" style="margin-top:15px; ">
+                    <input type="submit" id="ConfirmButton" value="Stwórz rezerwację" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<script>
+    jQuery(document).ready(function ($) {
+        var options = $('#test00 option');
+        $('#test0').on('change', function (e) {
+            $('#test00').append(options);
+            if ($(this).val() != 'Select') {
+                $('#test00 option[id!=' + $(this).id() + ']').remove();
+            } else {
+                $('#test00').val('Select');
+            }
+
+        });
+    });
+
+
+    $("#option1").change(function () {
+        if ($(this).data('options') === undefined) {
+            $(this).data('options', $('#option2 option').clone());
+        }
+        if ($(this).val() == 'Select') 
+            $("#option2").attr('disabled', true);
+        else
+            $("#option2").attr('disabled', false);
+        var id = $(this).val();
+        var options = $(this).data('options').filter('[id=' + id + ']');
+        $('#option2').html(options);
+    }).trigger("change");
+
+    $("#option2").change(function () {
+        if ($(this).val() === '') 
+            $("#ConfirmButton").attr('disabled', true);
+        else
+            $("#ConfirmButton").attr('disabled', false);
+    }).trigger("change");
+
+
+    
+    $("#option3").change(function () {
+        if ($(this).find('option:selected').val() == "Select")
+            $("#ConfirmButton").attr('disabled', true)
+        else
+            $("#ConfirmButton").attr('disabled', false)
+    }).trigger("change");
+
+    
+
+
+</script>

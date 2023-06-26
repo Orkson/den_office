@@ -8,19 +8,33 @@ namespace den_office.Models
 {
     public class Reservation
     {
-        public int Id { get; set; }
-        [Display(Name = "Usługa")]
-        public string Service { get; set; }
+        public int ReservationId { get; set; }
+
         public string Status { get; set; }
         [Display(Name = "Data usługi")]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime ServiceDate { get; set; }
         [Display(Name = "Data rezerwacji")]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime ReservationDate { get; set; }
 
+        [Display(Name = "Imię")]
+        public string CustomerName { get; set; }
 
+        [Display(Name = "Nazwisko")]
+        public string CustomerSurname { get; set; }
+
+        [Display(Name = "Email")]
+        [DataType(DataType.EmailAddress)]
+        public string CustomerEmail { get; set; }
+
+
+        public int ServiceId { get; set; }
+        [Display(Name = "Usługa")]
+        public Service Service { get; set; }
 
 
     }
+
+
 }

@@ -1,7 +1,7 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
+﻿@using den_office.Models;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 
 <!DOCTYPE html>
@@ -10,78 +10,116 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabinet stomatologiczny</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/fontawesome.css" />
+
+    <link rel="stylesheet" href="~/css/navbar.css" />
+
+    <link rel="stylesheet" href="~/lib/jquery-ui-1.13.0.custom/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
 
 </head>
 <body>
     <header class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg flex-md-nowrap shadow">
 
         <div class="container">
-            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" asp-area="" asp-controller="Home" asp-action="Index">
-                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                DentOptimal
-            </a>
-            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             @*<partial name="_LoginPartial" />*@
-        <div class="navbar-nav flex-grow-1 text-nowrap">
-
-
-
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">KLINIKA</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Offer">OFERTA</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Price">CENNIK</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Contact">KONTAKT</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="Reservations" asp-action="Index">Rezerwacje</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link px-3" asp-area="" asp-controller="customers" asp-action="Index">Klienci</a>
-            </div>
-
-            @if (SignInManager.IsSignedIn(User))
-            {
+            <div class="navbar-nav flex-grow-1 text-nowrap">
 
 
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Moje konto</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logo.png" width="30" height="30" class="" alt="">
+                        DentOptimal
+                    </a>
                 </div>
-                <div class="nav-item text-nowrap">
-                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                        <button type="submit" class="nav-link btn btn-link px-3">Wyloguj się</button>
-                    </form>
+                <ul class="nav-item">
+                    <li class="nav-item dropdown">
 
-                </div>
-            }
-            else
-            {
+                        <a class="nav-link px-4 pt-3 dropdown-toggle" href="#" id="1" data-bs-toggle="dropdown" aria-expanded="false">KLINIKA</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">O klinice</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Personel</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Galeria</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Kontakt</a></li>
+                            <li><a class="dropdown-item px-3" asp-area="" asp-controller="Home" asp-action="About">Polityka prywatności</a></li>
+                        </ul>
+                    </li>
 
 
+
+                </ul>
                 <div class="nav-item">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price" title="Oferta">OFERTA</a>
                 </div>
-                <div class="nav-item ">
-                    <a class="nav-link px-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                <div class="nav-item">
+                    <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Home" asp-action="Price" title="Cennik">CENNIK</a>
                 </div>
+                @if (User.IsInRole("Admin"))
+                {
 
-            }
+                    <div class="nav-item">
+                        <a class="nav-link px-4 pt-3" asp-area="" asp-controller="Reservations" asp-action="Index">Panel zarządzania</a>
+                    </div>
+                }
+                else if (SignInManager.IsSignedIn(User) && !User.IsInRole("Admin"))
+                {
+                    <div class="nav-item">
+                        <a class="nav-link px-4 pt-3" asp-controller="Reservations" asp-action="CreateReservation" title="Utwórz rezerwację">Utwórz rezerwację</a>
+                    </div>
+                }
+
+                @if (SignInManager.IsSignedIn(User))
+                {
 
 
+                    <div class="nav-item">
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Manage/Index" title="Moje konto">Moje konto</a>
+                    </div>
+                    <div class="nav-item text-nowrap">
+                        <form class="form-inline " asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="nav-link btn btn-link px-4 pt-3">Wyloguj się</button>
+                        </form>
+
+                    </div>
+                }
+                else
+                {
+
+
+                    <div class="nav-item">
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Register">Zarejestruj się</a>
+                    </div>
+                    <div class="nav-item ">
+                        <a class="nav-link px-4 pt-3" asp-area="Identity" asp-page="/Account/Login">Zaloguj się</a>
+                    </div>
+
+                }
+            </div>
         </div>
-        </div>
-
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -90,11 +128,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Nazwa gabinetu - stopka - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - DentOptimal - Wrocław <a asp-area="" asp-controller="Home" asp-action="About">  Więcej o nas </a><a asp-area="" asp-controller="Home" asp-action="About">    Kontakt</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

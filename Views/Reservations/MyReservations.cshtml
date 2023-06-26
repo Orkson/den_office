@@ -1,0 +1,51 @@
+﻿@model IEnumerable<den_office.Models.Reservation>
+@{
+    ViewData["Title"] = "MyReservations";
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "_LayoutSidebar";
+    }
+    else
+    {
+        Layout = "_LayoutSidebarUser";
+    }
+}
+<style>
+    .table-style {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+<h2 class="text-center">Moje rezerwacje</h2>
+<hr />
+
+<table class="table table-bordered table-style">
+    <thead>
+        <tr class="table-style">
+
+            <th>
+                Data usługi
+
+            </th>
+            <th>
+                Usługa
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr class="table-style">
+            <td>@Html.DisplayFor(modelItem => item.ReservationDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Service.ServiceName)</td>
+            <td><a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ReservationId">Anuluj rezerwację</a>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+
+
+

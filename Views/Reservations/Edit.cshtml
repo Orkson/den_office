@@ -4,25 +4,16 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Reservation</h4>
+<h2 class="text-center">Edycja rezerwacji Id @Html.DisplayFor(model => model.ReservationId)</h2>
 <hr />
+
 <div class="row">
+    <div class="col-md-4">
+    </div>
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Service" class="control-label"></label>
-                <input asp-for="Service" class="form-control" />
-                <span asp-validation-for="Service" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="ReservationId" />
             <div class="form-group">
                 <label asp-for="ServiceDate" class="control-label"></label>
                 <input asp-for="ServiceDate" class="form-control" />
@@ -30,17 +21,56 @@
             </div>
             <div class="form-group">
                 <label asp-for="ReservationDate" class="control-label"></label>
-                <input asp-for="ReservationDate" class="form-control" />
-                <span asp-validation-for="ReservationDate" class="text-danger"></span>
+                <input asp-for="ReservationDate" class="form-control" readonly/>
+                <input asp-for="ReservationDate" class="form-control" type="hidden" />
+
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label asp-for="Service" class="control-label"></label>
+                <select asp-for="ServiceId" class="form-select">
+                    <option selected disabled>Wybierz usługę</option>
+                    <option value="1">Okresowe badanie stomatologiczne</option>
+                    <option value="2">Konsultacja lekarska</option>
+                    <option value="3">Piaskowanie</option>
+                    <option value="4">Fluoryzacja</option>
+                    <option value="5">Wybielanie zębów</option>
+                    <option value="6">Ekstrakcja zęba mlecznego</option>
+                    <option value="7">Ekstrakcja zęba stałego</option>
+                    <option value="8">Chirurgiczna ekstrakcja zęba</option>
+                </select>
+                <span asp-validation-for="ServiceId" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" readonly/>
+
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerSurname" class="control-label"></label>
+                <input asp-for="CustomerSurname" class="form-control" readonly/>
+
+                <span asp-validation-for="CustomerSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerEmail" class="control-label"></label>
+                <input asp-for="CustomerEmail" class="form-control" readonly/>
+
+                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" style="margin-top:20px">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="d-flex justify-content-center" style="margin-top:40px">
+    <a class="btn btn-primary" style="margin-right:20px" asp-action="Index">Powrót do listy rezerwacji</a>
+    <a class="btn btn-secondary" style="margin-right:20px" asp-action="Edit" asp-route-id="@Model.ReservationId">Edytuj rezerwację</a>
+    <a class="btn btn-danger" style="margin-right:20px" asp-action="Delete" asp-route-id="@Model.ReservationId">Usuń rezerwację</a>
 </div>
 

@@ -2,29 +2,38 @@
 
 @{
     ViewData["Title"] = "Details";
+    Layout = "_LayoutSidebar";
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>Service</h4>
-    <hr />
+<h2 class="text-center">Szczegóły usługi Id @Html.DisplayFor(model=>model.ServiceId)</h2>
+<hr />
+<div class="d-flex justify-content-center" style="margin-top:50px">
+    
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ServiceName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ServiceName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ServiceDuration)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ServiceDuration)
         </dd>
+        <dt class="col-sm-2">
+            Id usługi
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ServiceId)
+        </dd>
     </dl>
+    
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<hr />
+<div class="d-flex justify-content-center" style="margin-top:40px">
+    <a class="btn btn-primary" style="margin-right:20px" asp-action="Index">Powrót do listy usług</a>
+    <a class="btn btn-secondary" style="margin-right:20px" asp-action="Edit" asp-route-id="@Model.ServiceId">Edytuj usługę</a>
+    <a class="btn btn-danger" style="margin-right:20px" asp-action="Delete" asp-route-id="@Model.ServiceId">Usuń usługę</a>
 </div>

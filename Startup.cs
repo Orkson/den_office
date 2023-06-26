@@ -17,6 +17,7 @@ using den_office.Tests;
 using den_office.Employees;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Authorization;
+using den_office.Models;
 
 namespace den_office
 {
@@ -32,20 +33,26 @@ namespace den_office
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Configuration["email"] = "potwierdzenie.projekt@gmail.com";
+            Configuration["pass"] = "Ad12345!";
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
 <<<<<<< Updated upstream
                     Configuration.GetConnectionString("DefaultConnection")));
+<<<<<<< HEAD
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
               .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 =======
                     Configuration.GetConnectionString("Server=tcp:testerowanie.database.windows.net,1433;Initial Catalog=aspnet-den_office-73054B0A-4C82-4C36-AC3F-8A2152C13DDF;Persist Security Info=False;User ID=admin1;Password={Menele00};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")));
+=======
+>>>>>>> refreshment
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews()            
                     .AddRazorRuntimeCompilation();
+<<<<<<< HEAD
 
             services.AddAuthorization(options =>
             {
@@ -55,15 +62,58 @@ namespace den_office
             });
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> refreshment
 
-            
-            //services.AddDbContext<ReservationContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("ReservationContext")));
+            services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+            });
 
 
-            services.AddSingleton<IReservationes, ReservationesData>();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings.
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = false;
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.LoginPath = "/Identity/Account/Login";
+                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+                options.SlidingExpiration = true;
+            });
+        
+        //services.AddDbContext<ReservationContext>(options =>
+        //options.UseSqlServer(Configuration.GetConnectionString("ReservationContext")));
+
+
+        services.AddSingleton<IReservationes, ReservationesData>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+
             services.AddControllers(config =>
             {
                 // using Microsoft.AspNetCore.Mvc.Authorization;
@@ -89,12 +139,14 @@ namespace den_office
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            var result = Configuration["email"];
+            var results = Configuration["pass"];
 
             app.UseEndpoints(endpoints =>
             {
