@@ -233,7 +233,7 @@ namespace den_office.Controllers
                     bool emailResponse = emailHelper.SendConfirm(user.Email, date);
 
                     ViewData["restype"] = date;
-                    return View("ReservationConfirm");
+                    return Redirect("~/Reservations/MyReservations");
 
                 }
                 else
@@ -364,25 +364,28 @@ namespace den_office.Controllers
             return View(reservation);
         }
 
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
+            var user = await _userManager.GetUserAsync(User);
+            var model = await _context.Reservation.Include(e => e.Service).Where(e => e.CustomerEmail == user.UserName).ToListAsync();
 
-            var reservation = await _context.Reservation
+
+
+            var reservation = await _context.Reservation.Include(e => e.Service)
                 .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
                 return NotFound();
             }
-
             return View(reservation);
+            
+            
         }
 
-        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

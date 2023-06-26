@@ -10,20 +10,42 @@
         Layout = "_LayoutSidebarUser";
     }
 }
+<style>
+    .table-style {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
 
-
-<h4>Reservation</h4>
+<h2 class="text-center">Moje rezerwacje</h2>
 <hr />
 
-@foreach (var item in Model)
-{
+<table class="table table-bordered table-style">
+    <thead>
+        <tr class="table-style">
 
-    @Html.DisplayFor(modelItem => item.ReservationDate)
-    @Html.DisplayFor(modelItem => item.CustomerSurname)
-    <br>
-}
+            <th>
+                Data usługi
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+            </th>
+            <th>
+                Usługa
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr class="table-style">
+            <td>@Html.DisplayFor(modelItem => item.ReservationDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Service.ServiceName)</td>
+            <td><a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ReservationId">Anuluj rezerwację</a>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+
+
 

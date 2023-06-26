@@ -15,13 +15,7 @@
             <dd class="col-sm-6">
                 @Html.DisplayFor(model => model.Service.ServiceName)
             </dd>
-            <div class="col-sm-4"></div>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Status)
-            </dt>
-            <dd class="col-sm-6">
-                @Html.DisplayFor(model => model.Status)
-            </dd>
+            
             <div class="col-sm-4"></div>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.ServiceDate)
@@ -36,6 +30,9 @@
             <dd class="col-sm-6">
                 @Html.DisplayFor(model => model.ReservationDate)
             </dd>
+
+            @if (User.IsInRole("Admin"))
+            {
             <div class="col-sm-4"></div>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.CustomerName)
@@ -57,10 +54,11 @@
             <dd class="col-sm-6">
                 @Html.DisplayFor(model => model.CustomerEmail)
             </dd>
+            }
         </dl>
-        <form asp-action="Delete">
+        <form asp-action="Delete" class="d-flex justify-content-center" style="margin-top:40px">
             <input type="hidden" asp-for="ReservationId" />
-            <input type="submit" value="Delete" class="btn btn-danger" /> |
-            <a asp-action="Index">Back to List</a>
+            <input type="submit" value="Usuń" class="btn btn-danger" />
+            <a class="btn btn-primary" style="margin-left:20px" asp-action="Index">Anuluj</a>
         </form>
     </div>

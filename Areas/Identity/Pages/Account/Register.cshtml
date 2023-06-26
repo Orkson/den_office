@@ -3,12 +3,24 @@
 @{
     //ViewData["Title"] = "Register";
 }
+<style>
+    .registerstyle {
+        background-color: #f2f2f2;
+        width: 700px;
+        height: 750px;
+        border: 2px solid #cccccc;
+        padding: 50px;
+        margin: 50px;
+    }
+</style>
+
 
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">
-    <div class="col-md-3"></div>
-        <div class="col-md-6">
+    <div class="col-md-2"></div>
+    <div class="registerstyle">
+        <div class="d-flex justify-content-center">
             <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <h3>Stwórz nowe konto</h3>
                 <hr />
@@ -47,7 +59,7 @@
                 <a class=" btn btn-light fa-pull-right" asp-area="Identity" asp-page="/Account/Login">Zaloguj się</a>
             </form>
         </div>
-    
+    </div>
 </div>
 
 @section Scripts {

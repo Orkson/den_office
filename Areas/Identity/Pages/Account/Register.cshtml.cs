@@ -67,7 +67,7 @@ namespace den_office.Areas.Identity.Pages.Account
             [DataType(DataType.PhoneNumber)]
             public string PhoneNumber { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Hasło jest wymagane")]
             [StringLength(100, ErrorMessage = "{0} musi zawierac minimum {2} znaków.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Hasło")]
@@ -105,7 +105,6 @@ namespace den_office.Areas.Identity.Pages.Account
                         values: new { area = "Application", userId = user.Id, code = coders, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    //moj cod
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -117,7 +116,7 @@ namespace den_office.Areas.Identity.Pages.Account
                     EmailSender emailHelper = new EmailSender();
                     bool emailResponse = emailHelper.Execute(user.Email, confirmationLink);
                     
-                    //koniec
+                    
 
 
 

@@ -61,25 +61,6 @@ namespace den_office.Controllers
             return View();
         }
 
-        [AllowAnonymous]
-        public IActionResult Staff()
-        {
-            return View();
-        }
-
-        [AllowAnonymous]
-        public IActionResult Gallery()
-        {
-            return View();
-        }
-
-
-        [AllowAnonymous]
-        public async Task<IActionResult> Privacy()
-        {
-            return View();
-        }
-
 
 
 

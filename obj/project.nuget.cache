@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rFI7hLpbD2wd6i6+H/31PgnWz/ngwNwdTUXpTg+NVfG5pOPXqAJvXO7DlzdCN44Ni2UM5ZeATTKYyFznU7AANg==",
+  "dgSpecHash": "K9px6e6ZqBXjFICRsuc1ZFyX2mo21vIbN0MOGNQNhO5quFpRmmgH5dxXHTPMLzSVqE0kPPU6BIL0GTyVsH/HRA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\C#\\den_office\\den_office\\den_office.csproj",
+  "projectFilePath": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\den_office.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marcin\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",

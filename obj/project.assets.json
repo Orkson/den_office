@@ -8419,11 +8419,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C#\\den_office\\den_office\\den_office.csproj",
+      "projectUniqueName": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\den_office.csproj",
       "projectName": "den_office",
-      "projectPath": "D:\\Projects\\C#\\den_office\\den_office\\den_office.csproj",
+      "projectPath": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\den_office.csproj",
       "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C#\\den_office\\den_office\\obj\\",
+      "outputPath": "D:\\Marcin\\studia\\praca dypl- płyta - wersja ostateczna\\den_office\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8524,7 +8524,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },
